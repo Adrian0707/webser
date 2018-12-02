@@ -1,8 +1,8 @@
 package com.example.main.Controller;
 
-import com.example.main.Entity.Student;
+
 import com.example.main.Entity.Zadanie_prac;
-import com.example.main.Service.StudentService;
+
 import com.example.main.Service.Zadanie_pracService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

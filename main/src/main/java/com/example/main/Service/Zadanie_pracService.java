@@ -1,8 +1,8 @@
 package com.example.main.Service;
 
-import com.example.main.Dao.StudentDao;
+
 import com.example.main.Dao.Zadanie_pracDao;
-import com.example.main.Entity.Student;
+
 import com.example.main.Entity.Zadanie_prac;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

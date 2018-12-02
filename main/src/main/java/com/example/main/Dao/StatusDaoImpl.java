@@ -1,6 +1,6 @@
 package com.example.main.Dao;
 
-import com.example.main.Entity.Priorytet;
+
 import com.example.main.Entity.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

@@ -1,11 +1,10 @@
 package com.example.main.Controller;
 
 import com.example.main.Entity.Pracownik;
-import com.example.main.Entity.Student;
 import com.example.main.Service.PracownikService;
-import com.example.main.Service.StudentService;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;

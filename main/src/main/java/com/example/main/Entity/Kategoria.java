@@ -1,7 +1,6 @@
 package com.example.main.Entity;
 
 
-
 public class Kategoria {
 
     int id_kategoria;

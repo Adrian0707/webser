@@ -1,6 +1,6 @@
 package com.example.main.Dao;
 
-import com.example.main.Entity.Student;
+
 import com.example.main.Entity.Zadanie_prac;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
