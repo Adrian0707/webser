@@ -1,7 +1,6 @@
 package com.example.main.Dao;
 
 import com.example.main.Entity.Komentarz;
-import com.example.main.Entity.Student;
 
 import java.util.Collection;
 

@@ -1,6 +1,5 @@
 package com.example.main.Dao;
 
-import com.example.main.Entity.Student;
 import com.example.main.Entity.Uzytkownik;
 
 import java.util.Collection;

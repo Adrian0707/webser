@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
-import java.util.Date;
+
 
 
 @Repository("zgloszenieSql")
@@ -68,13 +68,14 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
     @Override
     public void insertZgloszenie(Zgloszenie zgloszenie) {
         //insert into table columns (...) values (...)
-        final String sql = "insert into zgloszenia (id_zglosz,id_urzyt=?,id_kategoria=?, id_status=?," +
-                "id_priorytet=?,opis=?,obraz=?,data_przyj=?,data_max=?,data_real=?) Values (?,?,?,?,?,?,?,?,?,?)";
+        final String sql = "insert into zgloszenia  Values (?,?,?,?,?,?,?,?,?,?)";
 
-        jdbcTemplate.update(sql, zgloszenie.getId_zglosz(),zgloszenie.getId_uzyt(),zgloszenie.getId_kategoria(),
-                zgloszenie.getId_status(), zgloszenie.getId_priorytet(),zgloszenie.getOpis(),zgloszenie.getObraz(),
-                zgloszenie.getData_przyj(), zgloszenie.getData_max(),zgloszenie.getData_real());
-
+        jdbcTemplate.update(sql, zgloszenie.getId_zglosz(),
+                zgloszenie.getOpis(),zgloszenie.getObraz(),
+                zgloszenie.getData_przyj(),zgloszenie.getData_max(),
+                zgloszenie.getData_real(),zgloszenie.getId_uzyt(),
+                zgloszenie.getId_kategoria(),zgloszenie.getId_status(),
+                zgloszenie.getId_priorytet());
 
     }
 }

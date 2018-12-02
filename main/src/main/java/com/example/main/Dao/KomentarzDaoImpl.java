@@ -1,7 +1,6 @@
 package com.example.main.Dao;
 
 import com.example.main.Entity.Komentarz;
-import com.example.main.Entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
