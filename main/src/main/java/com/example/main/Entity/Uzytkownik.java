@@ -1,24 +1,48 @@
 package com.example.main.Entity;
 
 public class Uzytkownik {
-    int id;
+    int id_uzyt;
     String imie;
     String nazwisko;
     String email;
     String login;
-    String hasło;
+    String haslo;
 
     public Uzytkownik(int id, String imie, String nazwisko, String email, String login, String hasło) {
-        this.id = id;
+        this.id_uzyt = id;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.email = email;
         this.login = login;
-        this.hasło = hasło;
+        this.haslo = haslo;
     }
 
-    public int getId() {
-        return id;
+    public int getId_uzyt() {
+        return id_uzyt;
+    }
+
+    public void setId_uzyt(int id_uzyt) {
+        this.id_uzyt = id_uzyt;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setHaslo(String haslo) {
+        this.haslo = haslo;
     }
 
     public String getImie() {
@@ -37,7 +61,7 @@ public class Uzytkownik {
         return login;
     }
 
-    public String getHasło() {
-        return hasło;
+    public String getHaslo() {
+        return haslo;
     }
 }

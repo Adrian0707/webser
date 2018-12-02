@@ -43,7 +43,7 @@ public class PracownikDaoImpl implements PracownikDao {
     @Override
     public Pracownik getPracownikById(int id) {
         // select column name from table namw where column = value
-        final String sql = "SELECT id_prac, imie,nazwisko,email,login,haslo FROM pracownicy where id=?";
+        final String sql = "SELECT id_prac, imie,nazwisko,email,login,haslo FROM pracownicy where id_prac=?";
         Pracownik pracownik = jdbcTemplate.queryForObject(sql, new PracownikRowMapper(), id);
         return pracownik;
     }
