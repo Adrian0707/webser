@@ -4,14 +4,12 @@ package com.example.main.Controller;
 import com.example.main.Entity.Status;
 import com.example.main.Service.StatusService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/Statusy")
 public class StatusController {
 

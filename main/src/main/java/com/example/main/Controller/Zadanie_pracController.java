@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/zadania_prac")
+@CrossOrigin
+@RequestMapping("/Zadania_prac")
 public class Zadanie_pracController {
 
 

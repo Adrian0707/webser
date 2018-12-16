@@ -11,6 +11,7 @@ import java.util.Collection;
 
 
 @RestController
+@CrossOrigin
 @RequestMapping("/Komentarze")
 public class KomentarzController {
     @Autowired

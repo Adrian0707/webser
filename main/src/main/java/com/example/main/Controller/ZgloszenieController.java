@@ -11,6 +11,7 @@ import java.util.Collection;
 
 
 @RestController
+@CrossOrigin
 @RequestMapping("/Zgloszenia")
 public class ZgloszenieController {
     @Autowired

@@ -2,26 +2,18 @@ package com.example.main.Entity;
 
 import javax.persistence.*;
 
-@Table
-@Entity
-public class Pracownik {
-    @Id
-    @GeneratedValue
-    @Column(name = "id")
-    int id;
-    @Column(name = "imie")
-    String imie;
-    @Column(name = "nazwisko")
-    String nazwisko;
-    @Column(name = "email")
-    String email;
-    @Column(name = "login")
-    String login;
-    @Column(name = "haslo")
-    String haslo;
-    boolean nadzorca;
 
-    public Pracownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
+public class Pracownik {
+
+    private int id;
+    private String imie;
+    private String nazwisko;
+    private String email;
+    private String login;
+    private String haslo;
+    private boolean nadzorca;
+
+    private Pracownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
         this.id = id;
         this.imie = imie;
         this.nazwisko = nazwisko;
