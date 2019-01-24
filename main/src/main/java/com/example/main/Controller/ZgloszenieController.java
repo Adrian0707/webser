@@ -28,6 +28,11 @@ public class ZgloszenieController {
         return zgloszenieService.getZgloszenieById(id);
     }
 
+    @RequestMapping(value = "/uz.{id}", method = RequestMethod.GET)
+    public Collection<Zgloszenie> getZgloszenieByIdUz(@PathVariable("id") int idUz) {
+        return zgloszenieService.getZgloszeniaByIdUz(idUz);
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deletZgloszenieById(@PathVariable("id") int id) {
         zgloszenieService.removeZgloszenieById(id);

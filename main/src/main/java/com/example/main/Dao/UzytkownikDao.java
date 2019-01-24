@@ -9,9 +9,13 @@ public interface UzytkownikDao {
 
     Uzytkownik getUzytkownikById(int id);
 
+    int getUzytkownicyCount();
+
     void upadeUzytkownikByID(Uzytkownik uzytkownik);
 
     void removeUzytkownikById(int id);
 
     void insertUzytkownik(Uzytkownik uzytkownik);
+
+
 }

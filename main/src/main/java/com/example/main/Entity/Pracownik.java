@@ -5,15 +5,15 @@ import javax.persistence.*;
 
 public class Pracownik {
 
-    private int id;
-    private String imie;
-    private String nazwisko;
-    private String email;
-    private String login;
-    private String haslo;
-    private boolean nadzorca;
+  private  int id;
+  private  String imie;
+  private  String nazwisko;
+  private  String email;
+  private  String login;
+  private  String haslo;
+ protected   boolean nadzorca;
 
-    private Pracownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
+    protected Pracownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
         this.id = id;
         this.imie = imie;
         this.nazwisko = nazwisko;

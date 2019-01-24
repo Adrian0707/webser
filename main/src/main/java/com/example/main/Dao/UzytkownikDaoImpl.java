@@ -49,6 +49,13 @@ public class UzytkownikDaoImpl implements UzytkownikDao {
     }
 
     @Override
+    public int getUzytkownicyCount() {
+        final String sql = "SELECT count(id_uzyt) FROM system.uzytkownicy;";
+        Number count = jdbcTemplate.queryForObject(
+                sql, Integer.class);
+        return (count != null ? count.intValue() : 0);
+    }
+    @Override
     public void upadeUzytkownikByID(Uzytkownik uzytkownik) {
         final String sql = "update uzytkownicy set imie=?,nazwisko=?,email=?,login=?,haslo=? where id_uzyt=?";
 
@@ -71,4 +78,6 @@ public class UzytkownikDaoImpl implements UzytkownikDao {
                 ,uzytkownik.getLogin(),uzytkownik.getHaslo());
 
     }
+
+
 }

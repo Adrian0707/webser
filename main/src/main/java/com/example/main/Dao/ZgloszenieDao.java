@@ -8,6 +8,7 @@ public interface ZgloszenieDao {
     Collection<Zgloszenie> getAllZgloszenie();
 
     Zgloszenie getZgloszenieById(int id);
+    Collection<Zgloszenie> getZgloszeniaByIdUz(int idUz);
 
     void upadeZgloszenieByID(Zgloszenie zgloszenie);
 

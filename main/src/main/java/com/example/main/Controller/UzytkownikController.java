@@ -28,6 +28,9 @@ public class UzytkownikController {
         return uzytkownikService.getUzytkownikById(id);
     }
 
+    @RequestMapping(value = "/count", method = RequestMethod.GET)
+    public int getUzytkownicyCount(){return uzytkownikService.getUzytkownicyCount();}
+
    /* @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deletUzytkownikById(@PathVariable("id") int id) {
         uzytkownikService.removeUzytkownikById(id);

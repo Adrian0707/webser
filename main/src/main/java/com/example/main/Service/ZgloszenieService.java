@@ -25,6 +25,10 @@ public class ZgloszenieService {
         return this.zgloszenieDao.getZgloszenieById(id);
     }
 
+    public Collection<Zgloszenie> getZgloszeniaByIdUz(int idUz) {
+        return this.zgloszenieDao.getZgloszeniaByIdUz(idUz);
+    }
+
     public void removeZgloszenieById(int id) {
         zgloszenieDao.removeZgloszenieById(id);
     }

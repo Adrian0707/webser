@@ -1,41 +1,51 @@
+<div *ngIf="user">
+  <h1 class="navbar navbar-expand-lg navbar-dark bg-dark text-warning">User: {{user.imie}} {{user.nazwisko}}</h1>
+  <div >
+    <ul class="text-warning">
+      <li >login: {{user.login}}</li>
+      <li>Email: {{user.email}}</li>
+      <li>haslo: {{user.haslo}}</li>
+    </ul>
+    <h1>Edit user</h1>
+    <form>
+      <div>
+        <label>imie:</label><br>
+        <input type="text" [(ngModel)]="user.imie" name="imie">
+      </div>
+      <div>
+        <label>id:</label><br>
+        <input type="number" [(ngModel)]="user.id_uzyt" name="id_uzyt">
+      </div>
+      <div>
+        <label>Email: </label><br>
+        <input type="text" [(ngModel)]="user.email" name="email">
+      </div>
+      <div>
+        <label>nazwisko: </label><br>
+        <input type="text" [(ngModel)]="user.nazwisko" name="nazwisko">
+      </div>
+      <div>
+        <label>haslo: </label><br>
+        <input type="text" [(ngModel)]="user.haslo" name="haslo">
+      </div>
 
-<h1>User: {{name}}</h1>
-<div class="first">
-  <ul>
-    <li>Age: {{age}}</li>
-    <li>Email: {{email}}</li>
-    <li>Adress: {{adress.city}},{{adress.state}},{{adress.city}}</li>
-  </ul>
- <button (click)="onClick()">Click</button>
-  <h1>Edit user</h1>
-<form>
-  <div>
-    <label for="name">Name:</label><br>
-    <input type="text" [(ngModel)]="name" name="name">
-  </div>
-  <div>
-    <label for="age">Age:</label><br>
-    <input type="number" [(ngModel)]="age" name="age">
-  </div>
-  <div>
-    <label for="email">Email: </label><br>
-    <input type="text" [(ngModel)]="email" name="email">
-  </div>
-  <div>
-    <label for="street">Street: </label><br>
-    <input type="text" [(ngModel)]="adress.street" name="street">
-  </div>
-  <div>
-    <label for="city">City: </label><br>
-    <input type="text" [(ngModel)]="adress.city" name="city">
-  </div>
-  <div>
-    <label for="state">State: </label><br>
-    <input type="text" [(ngModel)]="adress.state" name="state">
-  </div>
+      <div>
+        <label>login: </label><br>
+        <input type="text" [(ngModel)]="user.login" name="login">
+      </div>
 
+      <button (click)="onClick()">Click</button>
 
-</form>
+    </form>
+
+    <div *ngFor="let zgl of zglo">
+      <ul>
+        <li>{{zgl.opis}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--
 
 <h1>Hobbbies</h1>
   <form (submit)="addHobby(hobby.value)" >
@@ -44,7 +54,9 @@
       <input type="text" #hobby>
     </div>
   </form>
+-->
 
+<!--
 <ul>
   <li *ngFor= "let hobby of hobbies; let i =index">
     {{i+1}}: {{hobby}} <button (click)="deleteHobby(hobby)">X</button> </li>
@@ -61,3 +73,4 @@
    company:<br> {{company}}
  </ul>
 
+-->

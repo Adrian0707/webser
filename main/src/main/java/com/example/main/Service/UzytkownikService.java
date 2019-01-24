@@ -24,6 +24,8 @@ public class UzytkownikService {
         return this.uzytkownikDao.getUzytkownikById(id);
     }
 
+    public int getUzytkownicyCount(){return this.uzytkownikDao.getUzytkownicyCount();}
+
     public void removeUzytkownikById(int id) {
         uzytkownikDao.removeUzytkownikById(id);
     }
@@ -36,5 +38,6 @@ public class UzytkownikService {
     public void insertUzytkownik(Uzytkownik uzytkownik) {
         uzytkownikDao.insertUzytkownik(uzytkownik);
     }
+
 
 }

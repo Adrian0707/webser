@@ -8,7 +8,7 @@ public class Uzytkownik {
     String login;
     String haslo;
 
-    public Uzytkownik(int id, String imie, String nazwisko, String email, String login, String hasło) {
+    public Uzytkownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
         this.id_uzyt = id;
         this.imie = imie;
         this.nazwisko = nazwisko;

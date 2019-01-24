@@ -23,7 +23,7 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
         @Override
         public Zgloszenie mapRow(ResultSet resultSet, int i) throws SQLException {
             Zgloszenie zgloszenie = new Zgloszenie(resultSet.getInt("id_zglosz"),
-                    resultSet.getInt("id_urzyt"),resultSet.getInt("id_kategoria"),
+                    resultSet.getInt("id_uzyt"),resultSet.getInt("id_kategoria"),
                     resultSet.getInt("id_status"),resultSet.getInt("id_priorytet"),
                     resultSet.getString("opis"),resultSet.getString("obraz"),
                     resultSet.getDate("data_przyj"), resultSet.getDate("data_max"),
@@ -42,6 +42,12 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
         // select column name from table namw where column = value
         final String sql = "select * from zgloszenia where id_zglosz=?";
         return jdbcTemplate.queryForObject(sql, new ZgloszenieRowMapper(), id);
+    }
+    @Override
+    public Collection<Zgloszenie> getZgloszeniaByIdUz(int idUz) {
+        // select column name from table namw where column = value
+        final String sql = "select * from zgloszenia where id_uzyt=?";
+        return jdbcTemplate.query(sql, new ZgloszenieRowMapper(), idUz);
     }
     @Override
     public void upadeZgloszenieByID(Zgloszenie zgloszenie) {

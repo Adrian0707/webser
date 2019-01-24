@@ -2,16 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcd2e78-c32a-43da-b10e-b63bdb4e08ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../front/proxyconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KategoriaController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/KategoriaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/KategoriaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/KomentarzController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/KomentarzController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/PracownikController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/PracownikController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/PriorytetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/PriorytetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/StatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/StatusController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/UzytkownikController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/UzytkownikController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/Zadanie_pracController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/Zadanie_pracController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/UzytkownikDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/UzytkownikDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/UzytkownikDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/UzytkownikDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl$ZgloszenieRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl$ZgloszenieRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Pracownik.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Pracownik.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Uzytkownik.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Uzytkownik.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Service/UzytkownikService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Service/UzytkownikService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Service/ZgloszenieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Service/ZgloszenieService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,77 +51,57 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="238">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
-                <element signature="e#965#966#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#663#664#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/KategoriaDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" selection-start-line="15" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/PriorytetController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/StatusController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="263">
+              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,40 +110,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="194">
+              <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
-                <element signature="e#1441#1442#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
+                <element signature="class#UzytkownikRowMapper#0;class#UzytkownikDaoImpl#0" />
+                <element signature="method#getUzytkownikById#0;class#UzytkownikDaoImpl#0" />
+                <element signature="method#upadeUzytkownikByID#0;class#UzytkownikDaoImpl#0" />
+                <element signature="method#removeUzytkownikById#0;class#UzytkownikDaoImpl#0" />
+                <element signature="method#insertUzytkownik#0;class#UzytkownikDaoImpl#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="340">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,49 +180,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Nadzorca.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/MySqlPracownikDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/StatusDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/StatusController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/KaterogiaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/PriorytetService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/PriorytetController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PriorytetDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KategoriaDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PriorytetDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Priorytet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Kategoria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/PracownikController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/StatusDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/StudentDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/PracownikService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/StatusService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/KomentarzService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KomentarzController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Komentarz.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/UrzytkownikService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UrzytkownikDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zgloszenie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KategoriaController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KomentarzController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/PracownikController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/PriorytetController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/StatusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zgloszenie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KategoriaController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -239,8 +236,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="784" />
-    <option name="height" value="1342" />
+    <option name="width" value="639" />
+    <option name="height" value="600" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -248,6 +245,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,21 +289,43 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544990203642" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545005252767" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -368,18 +388,31 @@
       <workItem from="1543833499673" duration="41000" />
       <workItem from="1543833822547" duration="410000" />
       <workItem from="1543841461392" duration="787000" />
-      <workItem from="1544976200551" duration="3332000" />
+      <workItem from="1544976200551" duration="9609000" />
+      <workItem from="1545043004066" duration="1717000" />
+      <workItem from="1547152909259" duration="1834000" />
+      <workItem from="1547191283697" duration="2585000" />
+      <workItem from="1547929689578" duration="2988000" />
+      <workItem from="1548283059866" duration="4383000" />
     </task>
+    <task id="LOCAL-00001" summary="cross orgin">
+      <created>1544990240937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544990240937</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79991000" />
+    <option name="totallyTimeSpent" value="99775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1860817" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20121029" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -391,7 +424,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.2667758" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.27168575" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3764321" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.31751227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -411,14 +444,18 @@
       <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Database" order="7" weight="0.22087745" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" visible="true" weight="0.028744327" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.028744327" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cross orgin" />
+    <option name="LAST_COMMIT_MESSAGE" value="cross orgin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -429,41 +466,17 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/PriorytetDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/StatusDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/StudentDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Priorytet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -532,38 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/StudentController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/FakeStudentDaoImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/KategoriaDao.java">
@@ -598,20 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -661,20 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Nadzorca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/StatusService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -715,46 +668,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java">
@@ -771,66 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/KategoriaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/KomentarzController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/PracownikController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/PriorytetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/StatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,27 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -893,18 +728,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/PriorytetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/StatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/KomentarzController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/PracownikController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/StatusDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Nadzorca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#upadeUzytkownikByID#0;class#UzytkownikService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/KategoriaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Uzytkownik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bd6a6e8-f94c-4a04-b2d9-988d1c25438f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#UzytkownikRowMapper#0;class#UzytkownikDaoImpl#0" />
+            <element signature="method#getUzytkownikById#0;class#UzytkownikDaoImpl#0" />
+            <element signature="method#upadeUzytkownikByID#0;class#UzytkownikDaoImpl#0" />
+            <element signature="method#removeUzytkownikById#0;class#UzytkownikDaoImpl#0" />
+            <element signature="method#insertUzytkownik#0;class#UzytkownikDaoImpl#0" />
           </folding>
         </state>
       </provider>
