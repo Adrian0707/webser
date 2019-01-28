@@ -13,6 +13,7 @@ public interface ZgloszenieDao {
     void upadeZgloszenieByID(Zgloszenie zgloszenie);
 
     void removeZgloszenieById(int id);
-
+    Collection<Zgloszenie> getAllZgloszenie(int id_prac);
     void insertZgloszenie(Zgloszenie zgloszenie);
+    int getZgloszenieCount();
 }

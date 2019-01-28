@@ -1,76 +1,52 @@
-<div *ngIf="user">
-  <h1 class="navbar navbar-expand-lg navbar-dark bg-dark text-warning">User: {{user.imie}} {{user.nazwisko}}</h1>
-  <div >
-    <ul class="text-warning">
-      <li >login: {{user.login}}</li>
-      <li>Email: {{user.email}}</li>
-      <li>haslo: {{user.haslo}}</li>
+<div *ngIf="userService.getUser().id_uzyt" class="table-dark">
+  <h1 class="text-warning">User: {{userService.getUser().imie}} {{userService.getUser().nazwisko}}</h1>
+  <div class="table-dark text-warning">
+    <ul>
+      <li>login: {{userService.getUser().login}}</li>
+      <li>Email: {{userService.getUser().email}}</li>
     </ul>
-    <h1>Edit user</h1>
-    <form>
-      <div>
-        <label>imie:</label><br>
-        <input type="text" [(ngModel)]="user.imie" name="imie">
-      </div>
-      <div>
-        <label>id:</label><br>
-        <input type="number" [(ngModel)]="user.id_uzyt" name="id_uzyt">
-      </div>
-      <div>
-        <label>Email: </label><br>
-        <input type="text" [(ngModel)]="user.email" name="email">
-      </div>
-      <div>
-        <label>nazwisko: </label><br>
-        <input type="text" [(ngModel)]="user.nazwisko" name="nazwisko">
-      </div>
-      <div>
-        <label>haslo: </label><br>
-        <input type="text" [(ngModel)]="user.haslo" name="haslo">
-      </div>
+    <div>
+      <button (click)="onClick($event)" type="button" class="btn btn-dark">Odświerz</button>
+    </div>
+    <h1></h1>
+  </div>
 
-      <div>
-        <label>login: </label><br>
-        <input type="text" [(ngModel)]="user.login" name="login">
+
+
+  <div class="list-group">
+    <a class="list-group-item list-group-item-dark ">
+      Zgloszenia
+    </a>
+
+
+    <div *ngFor="let zgl of userService.getNotify()">
+
+
+      <button (click)="notifyOpen(zgl.id_zglosz)" class="list-group-item list-group-item-dark list-group-item-action active">{{zgl.id_zglosz}}# {{userService.translateId_kategoria(zgl)}}</button>
+      <div *ngIf="this.opened==zgl.id_zglosz">
+
+        <li>Data: {{zgl.data_przyj}}</li>
+        <li>Priorytet: {{userService.translateId_priorytet(zgl)}}</li>
+        <li>Status: {{userService.translateId_status(zgl)}}</li>
+        <h1>Pracownicy: </h1>
+        <div *ngFor="let emp of employee.getEmployees()">
+          <li>Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
+            Mail: {{emp.email}}</li>
+        </div>
+        {{zgl.opis}}
+
       </div>
-
-      <button (click)="onClick()">Click</button>
-
-    </form>
-
-    <div *ngFor="let zgl of zglo">
-      <ul>
-        <li>{{zgl.opis}}</li>
-      </ul>
     </div>
   </div>
-</div>
-<!--
 
-<h1>Hobbbies</h1>
-  <form (submit)="addHobby(hobby.value)" >
-    <div>
-      <label for="hobby">Hobby</label>
-      <input type="text" #hobby>
-    </div>
-  </form>
--->
 
-<!--
-<ul>
-  <li *ngFor= "let hobby of hobbies; let i =index">
-    {{i+1}}: {{hobby}} <button (click)="deleteHobby(hobby)">X</button> </li>
-</ul>
+
+
+
+
 
 </div>
- <ul>
-   login:<br> {{log}}
- </ul>
-<ul>
-   bio:<br> {{bio}}
-</ul>
-<ul>
-   company:<br> {{company}}
- </ul>
+<div *ngIf="!userService.getUser().id_uzyt" class="table-dark">
+  <li>Złe dane logowania</li>
+</div>
 
--->

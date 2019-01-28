@@ -16,8 +16,8 @@ public class KomentarzService {
     @Qualifier("komentarzSql")
     private KomentarzDao komentarzDao;
 
-    public Collection<Komentarz> getAllKomentarz() {
-        return komentarzDao.getAllKomentarz();
+    public Collection<Komentarz> getAllKomentarz(int id_zglosz) {
+        return komentarzDao.getAllKomentarz(id_zglosz);
 
     }
 
@@ -38,4 +38,5 @@ public class KomentarzService {
         komentarzDao.insertKomentarz(komentarz);
     }
 
+    public int getKomentarzCount(){return this.komentarzDao.getKomentarzCount();}
 }

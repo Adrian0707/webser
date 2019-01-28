@@ -8,11 +8,24 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
+  <div class="collapse navbar-collapse" id="navbarColor01" *ngIf="user.getUser().imie!=null">
     <ul class="navbar-nav mr-auto">
+      <a class="nav-link" routerLink="/user">Zgłoszenia </a>
+      <a class="nav-link" routerLink="/notif">Dodaj zgłoszenie </a>
+    </ul>
+  </div>
+      <div class="collapse navbar-collapse" id="navbarColor02" *ngIf="employee.getEmployee().imie!=null">
+        <ul class="navbar-nav mr-auto">
+          <a class="nav-link" routerLink="/emp">Zgłoszenia </a>
+          <div *ngIf="employee.getEmployee().nadzorca">
+          <a class="nav-link" routerLink="/new-work">Rozdziel zgłoszenia </a>
+      </div>
+    </ul>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarColor00" *ngIf="user.getUser().imie==null&&employee.getEmployee().imie==null">
+    <ul class="navbar-nav mr-auto">
+      <a class="nav-link" routerLink="">Logowanie </a>
 
-        <a class="nav-link" routerLink="/user">User </a>
-      <a class="nav-link" routerLink="/mail">Mail </a>
 
 
 

@@ -26,18 +26,23 @@ public class UzytkownikService {
 
     public int getUzytkownicyCount(){return this.uzytkownikDao.getUzytkownicyCount();}
 
+    public Uzytkownik getUzytkownikByLogHas(String login,String haslo){return this.uzytkownikDao.getUzytkownikByLogHas(login,haslo);}
+
+    public Uzytkownik getUzytkownikByLog(String login){return this.uzytkownikDao.getUzytkownikByLog(login);}
+
     public void removeUzytkownikById(int id) {
-        uzytkownikDao.removeUzytkownikById(id);
+        this.uzytkownikDao.removeUzytkownikById(id);
     }
 
     public void upadeUzytkownikByID(Uzytkownik uzytkownik) {
-        uzytkownikDao.upadeUzytkownikByID(uzytkownik);
+        this.uzytkownikDao.upadeUzytkownikByID(uzytkownik);
 
     }
 
     public void insertUzytkownik(Uzytkownik uzytkownik) {
-        uzytkownikDao.insertUzytkownik(uzytkownik);
+        this.uzytkownikDao.insertUzytkownik(uzytkownik);
     }
+
 
 
 }

@@ -29,10 +29,10 @@ public class KomentarzDaoImpl implements KomentarzDao {
         }
     }
     @Override
-    public Collection<Komentarz> getAllKomentarz() {
+    public Collection<Komentarz> getAllKomentarz(int id_zglo) {
         // select column name from table name
-        final String sql = "SELECT * FROM komentarze";
-        return jdbcTemplate.query(sql, new KomentarzRowMapper());
+        final String sql = "SELECT * FROM komentarze where id_zglosz=?";
+        return jdbcTemplate.query(sql, new KomentarzRowMapper(), id_zglo);
     }
     @Override
     public Komentarz getKomentarzById(int id) {
@@ -73,5 +73,12 @@ public class KomentarzDaoImpl implements KomentarzDao {
         jdbcTemplate.update(sql, id_komentarza, id_prac, id_zglosz, comment,data);
 
 
+    }
+    @Override
+    public int getKomentarzCount() {
+        final String sql = "SELECT max(id_komentarza) FROM system.komentarze;";
+        Number count = jdbcTemplate.queryForObject(
+                sql, Integer.class);
+        return (count != null ? count.intValue() : 0);
     }
 }

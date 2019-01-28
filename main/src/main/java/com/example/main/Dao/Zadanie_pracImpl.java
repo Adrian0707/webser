@@ -60,10 +60,10 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
     }
 
     @Override
-    public void removeZadanie_pracById(int id) {
+    public void removeZadanie_pracById(int id1, int id2) {
 //DELETE FROM NAME WHERE COLUMN = VALUE
-        final String sql = " delete from zadania_prac where id=?";
-        jdbcTemplate.update(sql, id);
+        final String sql = " delete from zadania_prac where id_zglosz=? AND id_prac=?";
+        jdbcTemplate.update(sql, id1,id2);
     }
 
     @Override
@@ -76,6 +76,13 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
         jdbcTemplate.update(sql, id, id_prac, id_zglosz);
 
 
+    }
+    @Override
+    public int getZadanie_pracCount() {
+        final String sql = "SELECT max(id) FROM system.zadania_prac;";
+        Number count = jdbcTemplate.queryForObject(
+                sql, Integer.class);
+        return (count != null ? count.intValue() : 0);
     }
 
 

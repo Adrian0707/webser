@@ -6,46 +6,37 @@
       </div>
       <form  #userRegistrationForm="ngForm" >
         <div class="row">
-          <form class="example-form">
-            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Favorite food" value="Sushi">
-            </mat-form-field>
-
-            <mat-form-field class="example-full-width">
-              <textarea matInput placeholder="Leave a comment"></textarea>
-            </mat-form-field>
-          </form>
 
           <div>
-            <input   type="password" name="Password" #Password="ngModel" [(ngModel)]="user.haslo" required  minlength="3">
+            <input   type="password" name="Password" #Password="ngModel" [(ngModel)]="this.user.haslo" required  minlength="3">
             <label [attr.data-error]="Password.errors!=null?(Password.errors.required?'Required field!':'Minimum 3 characters needed'):''">Password</label>
           </div>
         </div>
         <div class="row">
           <div >
-            <input  type="text" name="Email" #Email="ngModel" [(ngModel)]="user.email" [pattern]="emailPattern">
+            <input  type="text" name="Email" #Email="ngModel" [(ngModel)]="this.user.email" [pattern]="emailPattern">
             <label data-error="Invalid email!">Email</label>
           </div>
         </div>
         <div class="row">
           <div >
-            <input  type="text" name="login" #Username="ngModel" [(ngModel)]="user.login" >
+            <input  type="text" name="login" #Username="ngModel" [(ngModel)]="this.user.login" >
             <label >Login</label>
           </div>
         </div>
         <div class="row">
           <div>
-            <input type="text" name="FirstName" #FirstName="ngModel" [(ngModel)]="user.imie">
+            <input type="text" name="FirstName" #FirstName="ngModel" [(ngModel)]="this.user.imie">
             <label>First Name</label>
           </div>
           <div >
-            <input type="text" name="LastName" #LastName="ngModel" [(ngModel)]="user.nazwisko">
+            <input type="text" name="LastName" #LastName="ngModel" [(ngModel)]="this.user.nazwisko">
             <label>Last Name</label>
           </div>
         </div>
         <div class="row">
           <div>
-            <button (click)="onClick()" [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
+            <button (click)="onClick($event)" [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
           </div>
         </div>
       </form>

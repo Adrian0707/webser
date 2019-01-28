@@ -11,6 +11,10 @@ public interface UzytkownikDao {
 
     int getUzytkownicyCount();
 
+    Uzytkownik getUzytkownikByLogHas(String login,String haslo);
+
+    Uzytkownik getUzytkownikByLog(String login);
+
     void upadeUzytkownikByID(Uzytkownik uzytkownik);
 
     void removeUzytkownikById(int id);

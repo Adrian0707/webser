@@ -32,7 +32,10 @@ public class ZgloszenieController {
     public Collection<Zgloszenie> getZgloszenieByIdUz(@PathVariable("id") int idUz) {
         return zgloszenieService.getZgloszeniaByIdUz(idUz);
     }
-
+    @RequestMapping(value = "/id_prac/{id_prac}", method = RequestMethod.GET)
+    public Collection<Zgloszenie> getAllPracownik(@PathVariable("id_prac") int id_prac) {
+        return zgloszenieService.getAllPracownik(id_prac);
+    }
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deletZgloszenieById(@PathVariable("id") int id) {
         zgloszenieService.removeZgloszenieById(id);
@@ -48,5 +51,8 @@ public class ZgloszenieController {
     public void insertZgloszenie(@RequestBody Zgloszenie zgloszenie) {
         zgloszenieService.insertZgloszenie(zgloszenie);
     }
+
+    @RequestMapping(value = "/count", method = RequestMethod.GET)
+    public int getZgloszenieCount(){return zgloszenieService.getZgloszenieCount();}
 
 }

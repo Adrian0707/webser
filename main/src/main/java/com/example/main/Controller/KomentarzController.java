@@ -18,9 +18,9 @@ public class KomentarzController {
     private KomentarzService komentarzService;
 
 
-    @RequestMapping(method = RequestMethod.GET)
-    public Collection<Komentarz> getAllKomentarz() {
-        return komentarzService.getAllKomentarz();
+    @RequestMapping(value = "/id_zglosz/{id_zglosz}",method = RequestMethod.GET)
+    public Collection<Komentarz> getAllKomentarz(@PathVariable("id_zglosz") int id_zglosz) {
+        return komentarzService.getAllKomentarz(id_zglosz);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -44,4 +44,6 @@ public class KomentarzController {
         komentarzService.insertKomentarz(komentarz);
     }
 
+    @RequestMapping(value = "/count", method = RequestMethod.GET)
+    public int getKomentarzCount(){return komentarzService.getKomentarzCount();}
 }

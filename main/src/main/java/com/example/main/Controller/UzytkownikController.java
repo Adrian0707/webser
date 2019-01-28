@@ -27,6 +27,14 @@ public class UzytkownikController {
     public Uzytkownik getUzytkownikById(@PathVariable("id") int id) {
         return uzytkownikService.getUzytkownikById(id);
     }
+    @RequestMapping(value = "/{login}/{haslo}", method = RequestMethod.GET)
+    public Uzytkownik getUzytkownikByLogHas(@PathVariable("login") String login, @PathVariable("haslo") String haslo) {
+        return uzytkownikService.getUzytkownikByLogHas(login,haslo);
+    }
+    @RequestMapping(value = "/{login}/get", method = RequestMethod.GET)
+    public Uzytkownik getUzytkownikByLog(@PathVariable("login") String login) {
+        return uzytkownikService.getUzytkownikByLog(login);
+    }
 
     @RequestMapping(value = "/count", method = RequestMethod.GET)
     public int getUzytkownicyCount(){return uzytkownikService.getUzytkownicyCount();}

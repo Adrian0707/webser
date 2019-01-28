@@ -1,37 +1,35 @@
 package com.example.main.Entity;
 
-import javax.persistence.*;
-
 
 public class Pracownik {
 
-  private  int id;
+  private  int id_prac;
   private  String imie;
   private  String nazwisko;
   private  String email;
   private  String login;
   private  String haslo;
- protected   boolean nadzorca;
+  protected   Boolean nadzorca;
 
-    protected Pracownik(int id, String imie, String nazwisko, String email, String login, String haslo) {
-        this.id = id;
+    protected Pracownik(int id_prac, String imie, String nazwisko, String email, String login, String haslo, Boolean nadzorca) {
+        this.id_prac = id_prac;
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.email = email;
         this.login = login;
         this.haslo = haslo;
-        this.nadzorca = false;
+        this.nadzorca = nadzorca;
     }
 
     public Pracownik() {
     }
 
-    public int getId() {
-        return id;
+    public int getId_prac() {
+        return id_prac;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId_prac(int id_prac) {
+        this.id_prac = id_prac;
     }
 
     public void setImie(String imie) {
@@ -78,7 +76,7 @@ public class Pracownik {
         return haslo;
     }
 
-    public boolean isNadzorca() {
+    public boolean getNadzorca() {
         return nadzorca;
     }
 }

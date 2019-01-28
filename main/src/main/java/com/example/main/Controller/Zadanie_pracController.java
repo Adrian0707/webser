@@ -30,9 +30,9 @@ public class Zadanie_pracController {
         return zadanie_pracService.getZadanie_pracById(id);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteZadanie_pracById(@PathVariable("id") int id) {
-        zadanie_pracService.removeZadanie_pracById(id);
+    @RequestMapping(value = "/del/{id}/{id2}", method = RequestMethod.DELETE)
+    public void deleteZadanie_pracById(@PathVariable("id") int id,@PathVariable("id2") int id2) {
+        zadanie_pracService.removeZadanie_pracById(id,id2);
     }
 
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -45,6 +45,8 @@ public class Zadanie_pracController {
     public void insertZadanie_prac(@RequestBody Zadanie_prac zadanie_prac) {
         zadanie_pracService.insertZadanie_prac(zadanie_prac);
     }
+    @RequestMapping(value = "/count", method = RequestMethod.GET)
+    public int getZadanie_pracCount(){return zadanie_pracService.getZadanie_pracCount();}
 
 }
 

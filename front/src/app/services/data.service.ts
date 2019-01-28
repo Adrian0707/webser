@@ -1,21 +1,42 @@
 import { Injectable } from '@angular/core';
-//import {HttpClient} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 
-
-import {map} from 'rxjs/operators';
-
+class Datee{
+  $id:number;
+  currentDateTime:string;
+  utcOffset	:string;
+  isDayLightSavingsTime	:Boolean;
+  dayOfTheWeek	:string;
+  timeZoneName	:string;
+  currentFileTime	:Number;
+  ordinalDate	:string;
+  serviceResponse	:string;
+}
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
- /* constructor(public  http:HttpClient) {
-    console.log('data service conected');
+  private  apiUrl ='http://worldclockapi.com/api/json/utc/now'
+  public data: Datee;
+  private actual: boolean;
+  constructor(private http:HttpClient){
   }
-  getPosts(){
-   return this.http.get('https://jsonplaceholder.typicode.com/posts')
-     .pipe(map(res=>res));
+  getTime(){
+    this.http.get<Datee>(this.apiUrl).subscribe(data =>{
+      console.log(data);
+      this.data=data;
+      this.actual=true;
+    })
 
-  }*/
+
+
+  }
+  getData(){
+
+  this.getTime();
+
+    return new Date(this.data.currentDateTime);
+  }
 
 }

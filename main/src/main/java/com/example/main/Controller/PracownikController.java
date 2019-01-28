@@ -11,7 +11,7 @@ import java.util.Collection;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/pracownicy")
+@RequestMapping("/Pracownicy")
 public class PracownikController {
 
 
@@ -24,9 +24,19 @@ public class PracownikController {
         return pracownikService.getAllPracownik();
     }
 
+    @RequestMapping(value = "/id_zglosz/{id_zglosz}", method = RequestMethod.GET)
+    public Collection<Pracownik> getAllPracownik(@PathVariable("id_zglosz") int id_zglosz) {
+        return pracownikService.getAllPracownik(id_zglosz);
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Pracownik getPraconikById(@PathVariable("id") int id) {
+    public Pracownik getPracownikById(@PathVariable("id") int id) {
         return pracownikService.getPracownikById(id);
+    }
+
+    @RequestMapping(value = "/{login}/{haslo}", method = RequestMethod.GET)
+    public Pracownik getPracownikByLogHas(@PathVariable("login") String login, @PathVariable("haslo") String haslo) {
+        return pracownikService.getPracownikByLogHas(login,haslo);
     }
 
 

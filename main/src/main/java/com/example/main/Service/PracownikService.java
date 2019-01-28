@@ -20,10 +20,14 @@ public class PracownikService {
         return pracownikDao.getAllPracownik();
 
     }
+    public Collection<Pracownik> getAllPracownik(int id_zglosz) {
+        return pracownikDao.getAllPracownik(id_zglosz);
+
+    }
 
     public Pracownik getPracownikById(int id) {
         return this.pracownikDao.getPracownikById(id);
     }
 
-
+    public Pracownik getPracownikByLogHas(String login,String haslo){return this.pracownikDao.getPracownikByLogHas(login,haslo);}
 }

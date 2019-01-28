@@ -50,10 +50,24 @@ public class UzytkownikDaoImpl implements UzytkownikDao {
 
     @Override
     public int getUzytkownicyCount() {
-        final String sql = "SELECT count(id_uzyt) FROM system.uzytkownicy;";
+        final String sql = "SELECT max(id_uzyt) FROM system.uzytkownicy;";
         Number count = jdbcTemplate.queryForObject(
                 sql, Integer.class);
         return (count != null ? count.intValue() : 0);
+    }
+
+    @Override
+    public  Uzytkownik getUzytkownikByLogHas(String login,String haslo){
+        final String sql = "SELECT id_uzyt, imie,nazwisko,email,login,haslo FROM uzytkownicy where login=? and haslo=?";
+        Uzytkownik uzytkownik = jdbcTemplate.queryForObject(sql, new UzytkownikRowMapper(), login,haslo);
+        return uzytkownik;
+
+    }
+    @Override
+    public  Uzytkownik getUzytkownikByLog(String login) {
+        final String sql = "SELECT id_uzyt, imie,nazwisko,email,login,haslo FROM uzytkownicy where login=? ";
+        Uzytkownik uzytkownik = jdbcTemplate.queryForObject(sql, new UzytkownikRowMapper(), login);
+        return uzytkownik;
     }
     @Override
     public void upadeUzytkownikByID(Uzytkownik uzytkownik) {

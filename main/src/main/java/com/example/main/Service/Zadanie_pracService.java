@@ -27,8 +27,8 @@ public class Zadanie_pracService {
         return this.zadaniePracDao.getZadanie_pracById(id);
     }
 
-    public void removeZadanie_pracById(int id) {
-        zadaniePracDao.removeZadanie_pracById(id);
+    public void removeZadanie_pracById(int id, int id2) {
+        zadaniePracDao.removeZadanie_pracById(id,id2);
     }
 
     public void upadeZadanie_pracById(Zadanie_prac zadanie_prac) {
@@ -40,6 +40,7 @@ public class Zadanie_pracService {
         zadaniePracDao.insertZadanie_prac(zadanie_prac);
     }
 
+    public int getZadanie_pracCount(){return this.zadaniePracDao.getZadanie_pracCount();}
 }
 
 

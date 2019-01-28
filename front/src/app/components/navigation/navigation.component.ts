@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from '../../services/user/user.service';
+import {EmployeeService} from '../../services/employee/employee.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private user:UserService, private employee:EmployeeService) { }
 
   ngOnInit() {
   }

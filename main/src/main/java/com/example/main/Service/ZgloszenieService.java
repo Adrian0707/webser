@@ -37,9 +37,12 @@ public class ZgloszenieService {
         zgloszenieDao.upadeZgloszenieByID(zgloszenie);
 
     }
+    public Collection<Zgloszenie> getAllPracownik(int id_prac) {
+        return zgloszenieDao.getAllZgloszenie(id_prac);
 
+    }
     public void insertZgloszenie(Zgloszenie zgloszenie) {
         zgloszenieDao.insertZgloszenie(zgloszenie);
     }
-
+    public int getZgloszenieCount(){return this.zgloszenieDao.getZgloszenieCount();}
 }

@@ -38,6 +38,13 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
         return jdbcTemplate.query(sql, new ZgloszenieRowMapper());
     }
     @Override
+    public Collection<Zgloszenie> getAllZgloszenie(int id_prac) {
+        // select column name from table name
+        final String sql = "SELECT * FROM system.zgloszenia where id_zglosz IN(SELECT id_zglosz FROM system.zadania_prac where id_prac=?)";
+        return  jdbcTemplate.query(sql, new ZgloszenieRowMapper(),id_prac);
+
+    }
+    @Override
     public Zgloszenie getZgloszenieById(int id) {
         // select column name from table namw where column = value
         final String sql = "select * from zgloszenia where id_zglosz=?";
@@ -52,7 +59,7 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
     @Override
     public void upadeZgloszenieByID(Zgloszenie zgloszenie) {
         //upade table set column=value .... where column=value
-        final String sql = "update zgloszenia set id_urzyt=?,id_kategoria=?, id_status=?," +
+        final String sql = "update zgloszenia set id_uzyt=?,id_kategoria=?, id_status=?," +
                 "id_priorytet=?,opis=?,obraz=?,data_przyj=?,data_max=?,data_real=? where id_zglosz=?";
 
         jdbcTemplate.update(sql, zgloszenie.getId_uzyt(),
@@ -84,4 +91,12 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
                 zgloszenie.getId_priorytet());
 
     }
+    @Override
+    public int getZgloszenieCount() {
+        final String sql = "SELECT max(id_zglosz) FROM system.zgloszenia;";
+        Number count = jdbcTemplate.queryForObject(
+                sql, Integer.class);
+        return (count != null ? count.intValue() : 0);
+    }
+
 }

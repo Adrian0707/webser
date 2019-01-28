@@ -12,7 +12,9 @@ public interface Zadanie_pracDao {
 
     void upadeZadanie_pracById(Zadanie_prac zadanie_prac);
 
-    void removeZadanie_pracById(int id);
+    void removeZadanie_pracById(int id1, int id2);
 
     void insertZadanie_prac(Zadanie_prac zadanie_prac);
+
+    int getZadanie_pracCount();
 }
