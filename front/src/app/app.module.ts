@@ -7,7 +7,7 @@ import {UserComponent} from './components/user/user.component';
 import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import {Routes, Router, RouterModule} from '@angular/router';
+import {Routes, RouterModule} from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MailComponent } from './components/mail/mail.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';

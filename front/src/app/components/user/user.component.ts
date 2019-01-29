@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {UserService} from '../../services/user/user.service';
 import {EmployeeService} from '../../services/employee/employee.service';
+import {Router} from '@angular/router';
 
 
 
@@ -14,7 +15,7 @@ export class UserComponent implements OnInit {
   public opened: number;
 
 
-  constructor( public  userService:UserService, public employee:EmployeeService) {
+  constructor( public  userService:UserService, public employee:EmployeeService,private  router:Router) {
   }
 
   ngOnInit() {
@@ -29,6 +30,7 @@ export class UserComponent implements OnInit {
   notifyOpen(nr : number ){
     this.opened=nr;
     this.employee.getEmployeesId_zglo(nr);
+
   }
 
 }

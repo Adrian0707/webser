@@ -47,20 +47,23 @@
         </div>
         <h1>Pracownicy: </h1>
         <div *ngFor="let emp of employee.getEmployees()">
+
           <li class="text-warning">Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
             Mail: {{emp.email}}</li>
           <div *ngIf="employee.getEmployee().nadzorca">
             <button (click)="del(zgl.id_zglosz,emp.id_prac,zgl.id_zglosz)" type="button" class="btn btn-dark">Usuń</button>
           </div>
         </div>
+        <div *ngIf="user.getUserNotif()!=null">
         <h4 class="text-warning">Użytkownik: {{user.getUserNotif().imie}} {{user.getUserNotif().nazwisko}} {{user.getUserNotif().email}}</h4>
-        <h3>Opis: </h3>
+        </div>
+          <h3>Opis: </h3>
         <h5>{{zgl.opis}}</h5>
         <h5 class= "text-warning">Komentarze</h5>
         <div *ngIf="employee.coments">
        <div *ngFor="let com of employee.coments">
          <div class="container">
-         <h5 class= "text-warning">{{employee.employeesall[com.id_prac-1].login}}</h5>
+         <h5 class= "text-warning" *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac-1].login}}</h5>
          <h6>{{com.comment}}</h6>
          </div>
        </div>

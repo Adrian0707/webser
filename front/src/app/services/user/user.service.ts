@@ -102,7 +102,6 @@ export class UserService {
           data => {
             this.notifies = data;
             this.setUserLoggedIn();
-            this.router.navigate(['/user']);
           },
           err => {
             console.error('Error: Get Notify[]', err);
@@ -129,6 +128,9 @@ export class UserService {
     );
     //this.isUserLoggedIn=true;
 
+  }
+  getUserNotifLogDBCheck(id:Number){
+   return this.http.get<User>('http://localhost:8080/Uzytkownicy/'+id)
   }
   setUserLoggedIn(){
     this.isUserLoggedIn=true;

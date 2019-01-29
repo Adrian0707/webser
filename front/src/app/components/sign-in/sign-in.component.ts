@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {UserService} from '../../services/user/user.service';
+import {Router} from '@angular/router';
 class User {
   id_uzyt: Number;
   imie: string;
@@ -19,9 +20,9 @@ class User {
 export class SignInComponent implements OnInit {
 
   user: User;
+  created: Boolean
 
-
-  constructor(private userService:UserService) {
+  constructor(private userService:UserService, private router:Router) {
   }
 
   ngOnInit() {
@@ -30,8 +31,19 @@ export class SignInComponent implements OnInit {
   }
 
   onClick(event) {
-
-    this.userService.insertUserDB(this.user);
+    this.created = false;
+    if (this.user.login.length > 0) {
+    
+    this.userService.getUserNotifLogDBCheck(this.user.id_uzyt).subscribe(
+      data => {
+        this.created = false;
+      },
+      err => {
+        this.userService.insertUserDB(this.user);
+        this.created = true;
+      }
+    )
+  }
 
 }
 }

@@ -2,46 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcd2e78-c32a-43da-b10e-b63bdb4e08ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../front/src/app/autoguard.guard.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/autoguard.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/services/user/user.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/app/services/user/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_0_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Service/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/services/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/services/employee/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/services/employee/employee.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/services/user/user.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/UzytkownikController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/UzytkownikController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/MainApplication.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +39,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -80,6 +47,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -163,12 +139,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDaoImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/Mail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -253,10 +229,7 @@
             </path>
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -273,7 +246,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548725661758" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548754079818" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CustomSwingComponent/CustomSwingComponent/CustomSwingComponent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -343,7 +316,7 @@
       <workItem from="1547929689578" duration="2988000" />
       <workItem from="1548283059866" duration="38726000" />
       <workItem from="1548706239664" duration="992000" />
-      <workItem from="1548707605004" duration="9256000" />
+      <workItem from="1548707605004" duration="12638000" />
     </task>
     <task id="LOCAL-00001" summary="cross orgin">
       <created>1544990240937</created>
@@ -363,13 +336,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144366000" />
+    <option name="totallyTimeSpent" value="147748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -381,7 +353,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.2667758" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.23404256" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.24222586" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.31751227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -759,13 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -892,6 +857,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="42" selection-end-column="21" />
         </state>
       </provider>
     </entry>

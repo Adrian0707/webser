@@ -2,14 +2,14 @@
   <div >
     <div >
       <div >
-        <h2>User Registration</h2>
+        <h2>Rejestracja</h2>
       </div>
       <form  #userRegistrationForm="ngForm" >
         <div class="row">
 
           <div>
             <input   type="password" name="Password" #Password="ngModel" [(ngModel)]="this.user.haslo" required  minlength="3">
-            <label [attr.data-error]="Password.errors!=null?(Password.errors.required?'Required field!':'Minimum 3 characters needed'):''">Password</label>
+            <label [attr.data-error]="Password.errors!=null?(Password.errors.required?'Required field!':'Minimum 3 characters needed'):''">Hasło</label>
           </div>
         </div>
         <div class="row">
@@ -27,16 +27,18 @@
         <div class="row">
           <div>
             <input type="text" name="FirstName" #FirstName="ngModel" [(ngModel)]="this.user.imie">
-            <label>First Name</label>
+            <label>Imię</label>
           </div>
           <div >
             <input type="text" name="LastName" #LastName="ngModel" [(ngModel)]="this.user.nazwisko">
-            <label>Last Name</label>
+            <label>Nazwisko</label>
           </div>
         </div>
         <div class="row">
           <div>
-            <button (click)="onClick($event)" [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>
+            <button (click)="onClick($event)" [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Zatwierdź</button>
+            <div *ngIf="this.created">Utworzono użytkownika</div>
+            <div *ngIf="!this.created">Nie utworzono</div>
           </div>
         </div>
       </form>
