@@ -1,0 +1,8 @@
+.box{
+  border-style: solid;
+  border-color: #282828;
+  border-radius: 30px;
+  background-color: #494949;
+  margin-left: 5vw;
+  margin-top: 1vh;
+}

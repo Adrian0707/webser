@@ -29,27 +29,27 @@
           <button (click)="zgl.id_kategoria=2"type="button" class="btn btn-secondary">{{this.user.translateId_kategoriaL(2)}}</button>
           <button (click)="zgl.id_kategoria=3"type="button" class="btn btn-secondary">{{this.user.translateId_kategoriaL(3)}}</button>
         </div>
-        <li class="text-warning">Data: {{zgl.data_przyj}}</li>
-        <li class="text-warning">Priorytet: {{user.translateId_priorytet(zgl)}}</li>
+        <h6 class="text-warning">Priorytet: {{user.translateId_priorytet(zgl)}}</h6>
         <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
           <button (click)="zgl.id_priorytet=1" type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(1)}}</button>
           <button (click)="zgl.id_priorytet=2"type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(2)}}</button>
           <button (click)="zgl.id_priorytet=3"type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(3)}}</button>
         </div>
-        <li class="text-warning">Status: {{user.translateId_status(zgl)}}</li>
+        <h6 class="text-warning">Status: {{user.translateId_status(zgl)}}</h6>
         <div class="btn-group" role="group" aria-label="Basic example">
           <button (click)="zgl.id_status=1" type="button" class="btn btn-secondary">{{this.user.translateId_statusL(1)}}</button>
           <button (click)="zgl.id_status=2"type="button" class="btn btn-secondary">{{this.user.translateId_statusL(2)}}</button>
           <button (click)="zgl.id_status=3"type="button" class="btn btn-secondary">{{this.user.translateId_statusL(3)}}</button>
         </div>
+        <h6 class="text-warning">Data: {{zgl.data_przyj}}</h6>
         <div>
           <button (click)="changeStatus(zgl)" type="button" class="btn btn-dark">Zmień</button>
         </div>
         <h1>Pracownicy: </h1>
         <div *ngFor="let emp of employee.getEmployees()">
 
-          <li class="text-warning">Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
-            Mail: {{emp.email}}</li>
+          <h6 class="text-warning">Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
+            Mail: {{emp.email}}</h6>
           <div *ngIf="employee.getEmployee().nadzorca">
             <button (click)="del(zgl.id_zglosz,emp.id_prac,zgl.id_zglosz)" type="button" class="btn btn-dark">Usuń</button>
           </div>
@@ -61,9 +61,9 @@
         <h5>{{zgl.opis}}</h5>
         <h5 class= "text-warning">Komentarze</h5>
         <div *ngIf="employee.coments">
-       <div *ngFor="let com of employee.coments">
+       <div *ngFor="let com of employee.coments" class="box">
          <div class="container">
-         <h5 class= "text-warning" *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac-1].login}}</h5>
+         <h6 class= "text-warning" *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac-1].login}} Dnia: {{com.data}}</h6>
          <h6>{{com.comment}}</h6>
          </div>
        </div>
@@ -91,3 +91,5 @@
   <li>Złe dane logowania</li>
 </div>
 
+</div>
+</div>

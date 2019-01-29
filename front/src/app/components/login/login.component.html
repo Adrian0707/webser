@@ -1,4 +1,4 @@
-<div *ngIf="userService.getUser().id_uzyt==null">
+<div *ngIf="userService.getUser().id_uzyt==null"class="navbar navbar-expand-lg table-dark text-warning">
 <form (submit)="loginUser($event)">
   <input type="text" placeholder="Username"id="username">
   <input type="password" placeholder="Password" id="password">
