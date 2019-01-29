@@ -1,8 +1,9 @@
 package com.example.main.Controller;
 
 
+import com.example.main.Entity.Uzytkownik;
 import com.example.main.Entity.Zgloszenie;
-import com.example.main.Service.ZgloszenieService;
+import com.example.main.Service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,14 @@ import java.util.Collection;
 public class ZgloszenieController {
     @Autowired
     private ZgloszenieService zgloszenieService;
-
+    @Autowired
+    private UzytkownikService uzytkownikService;
+    @Autowired
+    private StatusService statusService;
+    @Autowired
+    private PriorytetService priorytetService;
+    @Autowired
+    private KaterogiaService katerogiaService;
 
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Zgloszenie> getAllZgloszenie() {
@@ -43,6 +51,13 @@ public class ZgloszenieController {
 
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void UpadeZgloszenieById(@RequestBody Zgloszenie zgloszenie) {
+        Mail mail = new Mail();
+        Uzytkownik user =uzytkownikService.getUzytkownikById(zgloszenie.getId_uzyt());
+        mail.sendMessage(user.getEmail(),"Zmiana Statusu" +
+                "","Witaj "+user.getImie()+" "+user.getNazwisko()+"\ntwojgo zgłoszenie: #"+zgloszenie.getId_zglosz()+" uległo zmianie\n" +
+                "Status:"+statusService.getStatusById(zgloszenie.getId_status()).getNazwa()+"\n"
+        +"Priorytet:"+priorytetService.getPriorytetById(zgloszenie.getId_priorytet()).getNazwa()+"\n"
+        +"Kategoria:"+katerogiaService.getKategoriaById(zgloszenie.getId_status()).getNazwa()+"\n");
         zgloszenieService.upadeZgloszenieByID(zgloszenie);
 
     }

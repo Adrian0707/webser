@@ -1,0 +1,90 @@
+<div *ngIf="employee.getEmployee().id_prac" class="table-dark">
+  <h1 class="text-warning">User: {{employee.getEmployee().imie}} {{employee.getEmployee().nazwisko}}</h1>
+  <div class="table-dark text-warning">
+    <ul>
+      <li>login: {{employee.getEmployee().login}}</li>
+      <li>Email: {{employee.getEmployee().email}}</li>
+    </ul>
+
+    <h1></h1>
+  </div>
+  <div>
+    <button (click)="refresh()" type="button" class="btn btn-dark">Odświerz</button>
+  </div>
+
+
+  <div class="list-group">
+    <a class="list-group-item list-group-item-dark ">
+      Zgloszenia
+    </a>
+
+
+    <div *ngFor="let zgl of employee.notify">
+
+
+      <button (click)="notifyOpen(zgl.id_zglosz,zgl.id_uzyt)" class="list-group-item list-group-item-dark list-group-item-action active">{{zgl.id_zglosz}}# {{user.translateId_kategoria(zgl)}}</button>
+      <div *ngIf="this.opened==zgl.id_zglosz">
+        <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
+          <button (click)="zgl.id_kategoria=1" type="button" class="btn btn-secondary">{{this.user.translateId_kategoriaL(1)}}</button>
+          <button (click)="zgl.id_kategoria=2"type="button" class="btn btn-secondary">{{this.user.translateId_kategoriaL(2)}}</button>
+          <button (click)="zgl.id_kategoria=3"type="button" class="btn btn-secondary">{{this.user.translateId_kategoriaL(3)}}</button>
+        </div>
+        <li class="text-warning">Data: {{zgl.data_przyj}}</li>
+        <li class="text-warning">Priorytet: {{user.translateId_priorytet(zgl)}}</li>
+        <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
+          <button (click)="zgl.id_priorytet=1" type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(1)}}</button>
+          <button (click)="zgl.id_priorytet=2"type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(2)}}</button>
+          <button (click)="zgl.id_priorytet=3"type="button" class="btn btn-secondary">{{this.user.translateId_priorytetL(3)}}</button>
+        </div>
+        <li class="text-warning">Status: {{user.translateId_status(zgl)}}</li>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button (click)="zgl.id_status=1" type="button" class="btn btn-secondary">{{this.user.translateId_statusL(1)}}</button>
+          <button (click)="zgl.id_status=2"type="button" class="btn btn-secondary">{{this.user.translateId_statusL(2)}}</button>
+          <button (click)="zgl.id_status=3"type="button" class="btn btn-secondary">{{this.user.translateId_statusL(3)}}</button>
+        </div>
+        <div>
+          <button (click)="changeStatus(zgl)" type="button" class="btn btn-dark">Zmień</button>
+        </div>
+        <h1>Pracownicy: </h1>
+        <div *ngFor="let emp of employee.getEmployees()">
+          <li class="text-warning">Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
+            Mail: {{emp.email}}</li>
+          <div *ngIf="employee.getEmployee().nadzorca">
+            <button (click)="del(zgl.id_zglosz,emp.id_prac,zgl.id_zglosz)" type="button" class="btn btn-dark">Usuń</button>
+          </div>
+        </div>
+        <h4 class="text-warning">Użytkownik: {{user.getUserNotif().imie}} {{user.getUserNotif().nazwisko}} {{user.getUserNotif().email}}</h4>
+        <h3>Opis: </h3>
+        <h5>{{zgl.opis}}</h5>
+        <h5 class= "text-warning">Komentarze</h5>
+        <div *ngIf="employee.coments">
+       <div *ngFor="let com of employee.coments">
+         <div class="container">
+         <h5 class= "text-warning">{{employee.employeesall[com.id_prac-1].login}}</h5>
+         <h6>{{com.comment}}</h6>
+         </div>
+       </div>
+      </div>
+        <div>
+          <div class="input-group input-group-lg">
+            <textarea #text class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <div>
+            <button (click)="onClick($event,text.value,zgl.id_zglosz) " type="button" class="btn btn-dark">Wyślij</button>
+            <button (click)="notifyOpen(zgl.id_zglosz,zgl.id_uzyt)" type="button" class="btn btn-dark">Odświerz</button>
+          </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>
+<div *ngIf="!employee.getEmployee().id_prac" class="table-dark">
+  <li>Złe dane logowania</li>
+</div>
+

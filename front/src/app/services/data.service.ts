@@ -23,20 +23,11 @@ export class DataService {
   constructor(private http:HttpClient){
   }
   getTime(){
-    this.http.get<Datee>(this.apiUrl).subscribe(data =>{
-      console.log(data);
-      this.data=data;
-      this.actual=true;
-    })
+   return this.http.get<Datee>(this.apiUrl)
 
 
 
   }
-  getData(){
 
-  this.getTime();
-
-    return new Date(this.data.currentDateTime);
-  }
 
 }

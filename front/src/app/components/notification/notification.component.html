@@ -1,0 +1,25 @@
+<div class="navbar navbar-expand-lg navbar-dark bg-dark text-warning">
+
+
+  <span class="input-group-text">Kategoria</span>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button (click)="this.zglo.id_kategoria=1" type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(1)}}</button>
+      <button (click)="this.zglo.id_kategoria=2"type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(2)}}</button>
+      <button (click)="this.zglo.id_kategoria=3"type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(3)}}</button>
+
+    </div>
+
+</div>
+<div>
+    <div class="input-group input-group-lg">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Opis</span>
+      </div>
+      <textarea #text class="form-control" aria-label="With textarea">{{this.zglo.opis}}</textarea>
+    </div>
+
+<div>
+  <button (click)="onClick($event,text.value)" type="button" class="btn btn-dark">Wyślij</button>
+</div>
+
+</div>

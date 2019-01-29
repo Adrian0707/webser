@@ -2,6 +2,7 @@ package com.example.main.Controller;
 
 
 import com.example.main.Entity.Uzytkownik;
+import com.example.main.Service.Mail;
 import com.example.main.Service.UzytkownikService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

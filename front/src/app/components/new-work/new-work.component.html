@@ -1,0 +1,28 @@
+<div *ngIf="employee.getEmployee().nadzorca" class="list-group">
+  <a class="list-group-item list-group-item-dark ">
+    Zgloszenia
+  </a>
+
+
+  <div *ngFor="let zgl of employee.notifyall">
+
+
+    <button (click)="notifyOpen(zgl.id_zglosz)" class="list-group-item list-group-item-dark list-group-item-action active">
+      Id: {{zgl.id_zglosz}}#
+      Kategoria: {{user.translateId_kategoria(zgl)}}
+      Data: {{zgl.data_przyj}} Priorytet: {{user.translateId_priorytet(zgl)}}
+      Status: {{user.translateId_status(zgl)}}</button>
+    <div *ngIf="this.opened==zgl.id_zglosz">
+      <h1>Pracownicy: </h1>
+      <div *ngFor="let emp of employee.getEmployees()">
+        <li>Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
+          Mail: {{emp.email}}</li>
+
+      </div>
+      <div *ngFor="let emp of employee.employeesall">
+        <button (click)="addwork(zgl.id_zglosz,emp.id_prac)" type="button" class="btn btn-secondary">{{emp.imie}} {{emp.nazwisko}}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

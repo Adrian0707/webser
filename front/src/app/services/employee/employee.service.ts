@@ -54,6 +54,8 @@ export class EmployeeService {
     this.isEmployeeLoggedIn=false;
     this.employee= new Employee();
   }
+
+
   getEmployeesId_zglo(id_zglo){
     this.http.get<Employee[]>('http://localhost:8080/Pracownicy/id_zglosz/'+id_zglo).subscribe(
     data => {
@@ -83,6 +85,8 @@ export class EmployeeService {
       },
       err => {
         console.error('Error: Get User', err);
+          this.router.navigate(['/bad']);
+
       }
     );
   }
@@ -98,11 +102,33 @@ export class EmployeeService {
   getEmployees(){
     return this.employees;
   }
+  getAllEmployees(){
+    this.http.get<Employee[]>('http://localhost:8080/Pracownicy').subscribe(
+      data => {
+        this.employeesall = data;
+      },
+      err => {
+        console.error('Error: Get User', err);
+      }
+    );
+  }
   getZglo(){
     return this.notify;
   }
   newEmployee(){
     this.employee= new Employee();
+  }
+
+  getAllNotify(){
+    this.http.get<Notify[]>('http://localhost:8080/Zgloszenia').subscribe(
+      data => {
+        this.notifyall = data;
+      },
+      err => {
+        console.error('Error: Get User', err);
+      }
+    );
+
   }
   putNotify(notif:Notify){
     {
@@ -141,27 +167,6 @@ export class EmployeeService {
         }
       })
   }
-  getAllEmployees(){
-    this.http.get<Employee[]>('http://localhost:8080/Pracownicy').subscribe(
-      data => {
-        this.employeesall = data;
-      },
-      err => {
-        console.error('Error: Get User', err);
-      }
-    );
-  }
-  getAllNotify(){
-    this.http.get<Notify[]>('http://localhost:8080/Zgloszenia').subscribe(
-      data => {
-        this.notifyall = data;
-      },
-      err => {
-        console.error('Error: Get User', err);
-      }
-    );
-
-  }
   getAllComents(id:number){
     this.http.get<Comment[]>('http://localhost:8080/Komentarze/id_zglosz/'+id).subscribe(
       data => {
@@ -173,12 +178,23 @@ export class EmployeeService {
     );
     
   }
-  getName(id:number): String{
-    for (let prop of this.employeesall) {
-      if(prop.id_prac==this.id){
-        return prop.login;
-      }
-    }
+
+  insertComent(coment:Comment){
+    this.http.get<number>('http://localhost:8080/Komentarze/count').subscribe(
+      data => {
+        this.id = data;
+        this.id++;
+        {
+          this.http.post<Comment>('http://localhost:8080/Komentarze', {
+            id_komentarza: this.id,
+          id_prac: coment.id_prac,
+          id_zglosz: coment.id_zglosz,
+          comment: coment.comment,
+          data: coment.data
+          }).subscribe(data => {
+          });
+        }
+      })
   }
 
 }
