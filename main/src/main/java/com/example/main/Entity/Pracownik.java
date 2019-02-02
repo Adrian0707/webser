@@ -1,6 +1,5 @@
 package com.example.main.Entity;
 
-
 public class Pracownik {
 
   private  int id_prac;

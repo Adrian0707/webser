@@ -15,6 +15,7 @@ class Zglo {
   data_przyj: Date;
   data_max: Date;
   data_real: Date;
+  nazwa:String;
 }
 
 @Component({
@@ -28,10 +29,11 @@ zglo: Zglo;
 
   ngOnInit() {this.zglo=new Zglo();
   }
-  onClick($event,tekst){
+  onClick($event,text,title){
     this.data.getTime().subscribe(data =>{
       this.zglo.data_przyj=new Date(data.currentDateTime);
-    this.zglo.opis=tekst;
+    this.zglo.opis=text;
+    this.zglo.nazwa=title;
     this.zglo.id_uzyt=this.user.getUser().id_uzyt;
     this.zglo.id_priorytet=1;
     this.zglo.id_status=1;

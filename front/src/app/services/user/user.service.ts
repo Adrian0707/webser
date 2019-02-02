@@ -20,6 +20,7 @@ class Notify {
   data_przyj: Date;
   data_max: Date;
   data_real: Date;
+  nazwa:String;
 }
 
 @Injectable({
@@ -66,13 +67,14 @@ export class UserService {
           obraz: zglo.obraz,
           data_przyj: zglo.data_przyj,
           data_max: zglo.data_max,
-          data_real: zglo.data_real
+          data_real: zglo.data_real,
+          nazwa: zglo.nazwa
           }).subscribe(data => {
-            this.router.navigate(['/user']);
+            
           });
         }
       })
-
+      this.router.navigate(['/user']);
   }
   insertUserDB(user){
 
@@ -89,6 +91,7 @@ export class UserService {
             login: user.login,
             haslo: user.haslo
           }).subscribe(data => {
+            
           });
         }
       })
@@ -102,6 +105,7 @@ export class UserService {
           data => {
             this.notifies = data;
             this.setUserLoggedIn();
+            this.router.navigate(['/user']);
           },
           err => {
             console.error('Error: Get Notify[]', err);
@@ -129,8 +133,8 @@ export class UserService {
     //this.isUserLoggedIn=true;
 
   }
-  getUserNotifLogDBCheck(id:Number){
-   return this.http.get<User>('http://localhost:8080/Uzytkownicy/'+id)
+  getUserNotifLogDBCheck(name:string){
+   return this.http.get<User>('http://localhost:8080/Uzytkownicy/'+name+"/get")
   }
   setUserLoggedIn(){
     this.isUserLoggedIn=true;

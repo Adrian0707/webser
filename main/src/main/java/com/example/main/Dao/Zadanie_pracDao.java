@@ -8,7 +8,7 @@ import java.util.Collection;
 public interface Zadanie_pracDao {
     Collection<Zadanie_prac> getAllZadanie_prac();
 
-    Zadanie_prac getZadanie_pracById(int id);
+    Zadanie_prac getZadanie_pracById(int id,int id2);
 
     void upadeZadanie_pracById(Zadanie_prac zadanie_prac);
 

@@ -1,0 +1,16 @@
+
+body{
+    margin: 0;
+    font: normal 16px Arial,Helvetica, sand-serif;
+    color:#333;
+  }
+  #box{
+    border-radius: 25px;
+    background: #ffffff;
+    opacity: 0.85;
+    padding: 2em;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+  }
+ 

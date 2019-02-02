@@ -1,6 +1,50 @@
 
-.first{
-
-  font-family: "Cambria Math";
-
+body{
+  margin: 0;
+  font: normal 16px Arial,Helvetica, sand-serif;
+  color:#333;
 }
+#box{
+  border-radius: 25px;
+  background: #ffffff;
+  opacity: 0.85;
+  padding: 2em;
+  position: absolute;
+  left: 2%;
+  top: 10%;
+}
+
+img{
+  width:100%;
+  max-width:300px;
+}
+#box2{
+  border-radius: 25px;
+  background: #ffffff;
+  opacity: 0.85;
+  padding: 2em;
+  position: absolute;
+  left: 2%;
+  top: 43%;
+}
+#box3{
+  border-radius: 25px;
+  background: #ffffff;
+  opacity: 0.85;
+  padding: 2em;
+  position: absolute;
+  top: 10%;
+  left: 32%;
+}
+.example-viewport {
+  height: 200px;
+  width: 300px;
+  border: 1px solid gray;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.example-item {
+  height: 50px;
+}
+

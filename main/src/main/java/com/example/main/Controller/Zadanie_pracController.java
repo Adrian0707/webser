@@ -25,9 +25,9 @@ public class Zadanie_pracController {
         return zadanie_pracService.getAllZadanie_prac();
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Zadanie_prac getZadanie_pracById(@PathVariable("id") int id) {
-        return zadanie_pracService.getZadanie_pracById(id);
+    @RequestMapping(value = "/{id}/{id2}", method = RequestMethod.GET)
+    public Zadanie_prac getZadanie_pracById(@PathVariable("id") int id,@PathVariable("id2") int id2) {
+        return zadanie_pracService.getZadanie_pracById(id,id2);
     }
 
     @RequestMapping(value = "/del/{id}/{id2}", method = RequestMethod.DELETE)

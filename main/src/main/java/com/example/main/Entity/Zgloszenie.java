@@ -13,9 +13,12 @@ public class Zgloszenie {
     Date data_przyj;
     Date data_max;
     Date data_real;
+    String nazwa;
+
+
 
     public Zgloszenie(int id, int id_uzyt, int id_kategoria, int id_status, int id_priorytet,
-                      String opis, String obraz, Date data_przyj, Date data_max, Date data_real) {
+                      String opis, String obraz, Date data_przyj, Date data_max, Date data_real, String nazwa) {
         this.id_zglosz = id;
         this.id_uzyt = id_uzyt;
         this.id_kategoria = id_kategoria;
@@ -26,6 +29,8 @@ public class Zgloszenie {
         this.data_przyj = data_przyj;
         this.data_max = data_max;
         this.data_real = data_real;
+        this.nazwa=nazwa;
+
     }
 
     public int getId_zglosz() {
@@ -106,5 +111,12 @@ public class Zgloszenie {
 
     public void setData_real(Date data_real) {
         this.data_real = data_real;
+    }
+    public String getNazwa() {
+        return nazwa;
+    }
+
+    public void setNazwa(String nazwa) {
+        this.nazwa = nazwa;
     }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {UserService} from '../../services/user/user.service';
 import {Router} from '@angular/router';
+import {MatInputModule} from '@angular/material/input';
 class User {
   id_uzyt: Number;
   imie: string;
@@ -32,9 +33,9 @@ export class SignInComponent implements OnInit {
 
   onClick(event) {
     this.created = false;
-    if (this.user.login.length > 0) {
+    if ((this.user.login.length > 0)&&(this.user.haslo.length>2)) {
     
-    this.userService.getUserNotifLogDBCheck(this.user.id_uzyt).subscribe(
+    this.userService.getUserNotifLogDBCheck(this.user.login).subscribe(
       data => {
         this.created = false;
       },

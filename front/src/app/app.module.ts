@@ -9,7 +9,6 @@ import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {Routes, RouterModule} from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { MailComponent } from './components/mail/mail.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import {UserService} from './services/user/user.service';
 import {AutoguardGuard} from './autoguard.guard';
@@ -17,6 +16,13 @@ import { EmployeeComponent } from './components/employee/employee.component';
 import {EmployeeService} from './services/employee/employee.service';
 import { NotificationComponent } from './components/notification/notification.component';
 import { NewWorkComponent } from './components/new-work/new-work.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card'; 
+import {ScrollDispatchModule} from '@angular/cdk/scrolling';
+
 
 const appRoutes: Routes = [
   {
@@ -26,7 +32,7 @@ const appRoutes: Routes = [
   },
   {
     path:'notif',
-    canActivate:[AutoguardGuard],
+    //canActivate:[AutoguardGuard],
     component:NotificationComponent
   },
   {
@@ -40,8 +46,13 @@ const appRoutes: Routes = [
     component:NewWorkComponent
   },
   {
-    path: '',
+    path: 'Log',
     component:LoginComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: '',
+    component:HomePageComponent,
     pathMatch: 'full'
   },
   {
@@ -61,11 +72,11 @@ const appRoutes: Routes = [
     LoginComponent,
     NotFoundComponent,
     NavigationComponent,
-    MailComponent,
     SignInComponent,
     EmployeeComponent,
     NotificationComponent,
-    NewWorkComponent
+    NewWorkComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +84,13 @@ const appRoutes: Routes = [
     FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatMenuModule,
+    MatCardModule,
+    ScrollDispatchModule
   ],
   exports:[
 

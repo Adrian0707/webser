@@ -27,7 +27,7 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
                     resultSet.getInt("id_status"),resultSet.getInt("id_priorytet"),
                     resultSet.getString("opis"),resultSet.getString("obraz"),
                     resultSet.getDate("data_przyj"), resultSet.getDate("data_max"),
-                    resultSet.getDate("data_real"));
+                    resultSet.getDate("data_real"),resultSet.getString("nazwa"));
             return zgloszenie;
         }
     }
@@ -60,12 +60,12 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
     public void upadeZgloszenieByID(Zgloszenie zgloszenie) {
         //upade table set column=value .... where column=value
         final String sql = "update zgloszenia set id_uzyt=?,id_kategoria=?, id_status=?," +
-                "id_priorytet=?,opis=?,obraz=?,data_przyj=?,data_max=?,data_real=? where id_zglosz=?";
+                "id_priorytet=?,opis=?,obraz=?,data_przyj=?,data_max=?,data_real=?,nazwa=? where id_zglosz=?";
 
         jdbcTemplate.update(sql, zgloszenie.getId_uzyt(),
                 zgloszenie.getId_kategoria(),zgloszenie.getId_status(), zgloszenie.getId_priorytet(),
                 zgloszenie.getOpis(),zgloszenie.getObraz(),zgloszenie.getData_przyj(),
-                zgloszenie.getData_max(),zgloszenie.getData_real(),zgloszenie.getId_zglosz()
+                zgloszenie.getData_max(),zgloszenie.getData_real(),zgloszenie.getNazwa(),zgloszenie.getId_zglosz()
                 );
 
 
@@ -81,14 +81,14 @@ public class ZgloszenieDaoImpl implements ZgloszenieDao {
     @Override
     public void insertZgloszenie(Zgloszenie zgloszenie) {
         //insert into table columns (...) values (...)
-        final String sql = "insert into zgloszenia  Values (?,?,?,?,?,?,?,?,?,?)";
+        final String sql = "insert into zgloszenia  Values (?,?,?,?,?,?,?,?,?,?,?)";
 
         jdbcTemplate.update(sql, zgloszenie.getId_zglosz(),
                 zgloszenie.getOpis(),zgloszenie.getObraz(),
                 zgloszenie.getData_przyj(),zgloszenie.getData_max(),
                 zgloszenie.getData_real(),zgloszenie.getId_uzyt(),
                 zgloszenie.getId_kategoria(),zgloszenie.getId_status(),
-                zgloszenie.getId_priorytet());
+                zgloszenie.getId_priorytet(),zgloszenie.getNazwa());
 
     }
     @Override

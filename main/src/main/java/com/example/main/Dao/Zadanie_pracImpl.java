@@ -22,7 +22,9 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
 
         @Override
         public Zadanie_prac mapRow(ResultSet resultSet, int i) throws SQLException {
-            Zadanie_prac zadanie_prac = new Zadanie_prac(resultSet.getInt("id"), resultSet.getInt("id_zglosz"), resultSet.getInt("id_prac"));
+            Zadanie_prac zadanie_prac = new Zadanie_prac(resultSet.getInt("id"),
+                    resultSet.getInt("id_zglosz"), resultSet.getInt("id_prac"),
+                    resultSet.getDouble("czas"));
 
             return zadanie_prac;
         }
@@ -31,17 +33,17 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
     @Override
     public Collection<Zadanie_prac> getAllZadanie_prac() {
         // select column name from table name
-        final String sql = "SELECT id,id_zglosz, id_prac FROM zadania_prac";
+        final String sql = "SELECT * FROM zadania_prac";
         List<Zadanie_prac> zadanie_prac = jdbcTemplate.query(sql, new Zadanie_pracRowMapper());
         return zadanie_prac;
     }
 
 
     @Override
-    public Zadanie_prac getZadanie_pracById(int id) {
+    public Zadanie_prac getZadanie_pracById(int id, int id2) {
         // select column name from table namw where column = value
-        final String sql = "SELECT id,id_zglosz, id_prac FROM zadania_prac where id=?";
-        Zadanie_prac zadanie_prac = jdbcTemplate.queryForObject(sql, new Zadanie_pracRowMapper(), id);
+        final String sql = "SELECT * FROM zadania_prac where id_prac=? and id_zglosz=?";
+        Zadanie_prac zadanie_prac = jdbcTemplate.queryForObject(sql, new Zadanie_pracRowMapper(), id,id2);
         return zadanie_prac;
     }
 
@@ -50,11 +52,12 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
     public void upadeZadanie_pracById(Zadanie_prac zadanie_prac) {
         //upade table set column=value .... where column=value
 
-        final String sql = "update zadania_prac set id_zglosz=?, id_prac=? where (id=?)";
+        final String sql = "update zadania_prac set id_zglosz=?, id_prac=?,czas=? where (id=?)";
         int id = zadanie_prac.getId();
         int id_prac = zadanie_prac.getId_prac();
         int id_zglosz = zadanie_prac.getId_zglosz();
-        jdbcTemplate.update(sql, id_zglosz, id_prac, id);
+        Double czas= zadanie_prac.getCzas();
+        jdbcTemplate.update(sql, id_zglosz, id_prac,czas, id);
 
 
     }
@@ -69,11 +72,12 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
     @Override
     public void insertZadanie_prac(Zadanie_prac zadanie_prac) {
         //insert into table columns (...) values (...)
-        final String sql = "insert into zadania_prac (id,id_prac,id_zglosz) Values (?,?,?)";
+        final String sql = "insert into zadania_prac (id,id_prac,id_zglosz) Values (?,?,?,?)";
         final int id = zadanie_prac.getId();
         final int id_prac = zadanie_prac.getId_prac();
         final int id_zglosz = zadanie_prac.getId_zglosz();
-        jdbcTemplate.update(sql, id, id_prac, id_zglosz);
+        final double czas = zadanie_prac.getCzas();
+        jdbcTemplate.update(sql, id, id_prac, id_zglosz,czas);
 
 
     }

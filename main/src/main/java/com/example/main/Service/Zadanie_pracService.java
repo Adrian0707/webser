@@ -23,8 +23,8 @@ public class Zadanie_pracService {
 
     }
 
-    public Zadanie_prac getZadanie_pracById(int id) {
-        return this.zadaniePracDao.getZadanie_pracById(id);
+    public Zadanie_prac getZadanie_pracById(int id, int id2) {
+        return this.zadaniePracDao.getZadanie_pracById(id, id2);
     }
 
     public void removeZadanie_pracById(int id, int id2) {

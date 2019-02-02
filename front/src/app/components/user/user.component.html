@@ -1,52 +1,55 @@
-<div *ngIf="userService.getUser().id_uzyt" class="table-dark">
-  <h1 class="text-warning">User: {{userService.getUser().imie}} {{userService.getUser().nazwisko}}</h1>
-  <div class="table-dark text-warning">
-    <ul>
-      <li>login: {{userService.getUser().login}}</li>
-      <li>Email: {{userService.getUser().email}}</li>
-    </ul>
-    <div>
-      <button (click)="onClick($event)" type="button" class="btn btn-dark">Odświerz</button>
-    </div>
-    <h1></h1>
-  </div>
 
-
-
-  <div class="list-group">
-    <a class="list-group-item list-group-item-dark ">
-      Zgloszenia
-    </a>
-
-
-    <div *ngFor="let zgl of userService.getNotify()">
-
-
-      <button (click)="notifyOpen(zgl.id_zglosz)" class="list-group-item list-group-item-dark list-group-item-action active">{{zgl.id_zglosz}}# {{userService.translateId_kategoria(zgl)}}</button>
-      <div *ngIf="this.opened==zgl.id_zglosz">
-
-        <li>Data: {{zgl.data_przyj}}</li>
-        <li>Priorytet: {{userService.translateId_priorytet(zgl)}}</li>
-        <li>Status: {{userService.translateId_status(zgl)}}</li>
-        <h1>Pracownicy: </h1>
-        <div *ngFor="let emp of employee.getEmployees()">
-          <li>Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
-            Mail: {{emp.email}}</li>
-        </div>
-        {{zgl.opis}}
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
+<div id="box" *ngIf="userService.getUser().id_uzyt">
+  <h4>User: {{userService.getUser().imie}} {{userService.getUser().nazwisko}}</h4>
+    <h6>Login: {{userService.getUser().login}}</h6>
+    <h6>Email: {{userService.getUser().email}}</h6>
 </div>
-<div *ngIf="!userService.getUser().id_uzyt" class="table-dark">
-  <li>Złe dane logowania</li>
+
+<div id="box2">
+  <div>
+    <button (click)="onClick($event)" type="button" class="btn btn-dark">Show details/Refresh list</button>
+  </div>
+  <h1></h1>
+  
+    <a class="list-group-item list-group-item-dark ">
+      Notifications
+    </a>
+    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+      <div *cdkVirtualFor="let zgl of userService.getNotify()" class="example-item">
+        <button (click)="notifyOpen(zgl.id_zglosz)" class="list-group-item list-group-item-dark list-group-item-action active">{{zgl.id_zglosz}}#
+          {{zgl.nazwa}} {{userService.translateId_kategoria(zgl)}}</button>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  
+</div>
+<div *ngIf="employee.employees!=null">
+<div *ngFor="let zgl of userService.getNotify()">
+  <div id="box3" *ngIf="this.opened==zgl.id_zglosz">
+    <h6>Title: {{zgl.nazwa}}</h6>
+    <h6>Nr: {{zgl.id_zglosz}}</h6>
+    <h6>Date: {{zgl.data_przyj}}</h6>
+    <h6>Category: {{userService.translateId_kategoria(zgl)}}</h6>
+    <h6>Priority: {{userService.translateId_priorytet(zgl)}}</h6>
+    <h6>Status: {{userService.translateId_status(zgl)}}</h6>
+    <h6>Employees: </h6>
+    <div *ngFor="let emp of employee.getEmployees()">
+      <li>{{emp.imie}} {{emp.nazwisko}}
+        Mail: {{emp.email}}</li>
+    </div>
+    Description: {{zgl.opis}}
+  
+  <br>
+    <div *ngIf="zgl.id_kategoria==1">
+        <img src="https://www.neonet.pl/karty/pliki/zdjecia/full600/37/pralka-samsung-agd-ww70-j5346-fx-319903f1.jpg">   
+    </div>
+    <div *ngIf="zgl.id_kategoria==2">
+        <img src="https://www.neonet.pl/karty/pliki/zdjecia/full600/5A/4242002775555F1.jpg">
+  </div>
+    <div *ngIf="zgl.id_kategoria==3">
+        <img src="https://www.neonet.pl/karty/pliki/zdjecia/full600/46/4242002919003F1.jpg">
+
+    </div>
+  </div>
+</div>
 </div>
 
