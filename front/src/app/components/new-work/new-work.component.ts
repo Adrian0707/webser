@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {EmployeeService} from '../../services/employee/employee.service';
 import {UserService} from '../../services/user/user.service';
 
@@ -10,16 +10,20 @@ import {UserService} from '../../services/user/user.service';
 export class NewWorkComponent implements OnInit {
   private opened: number;
 
-  constructor(public employee:EmployeeService, public user:UserService) { }
-
-  ngOnInit() { this.employee.getAllNotify();
-                this.employee.getAllEmployees();
+  constructor(public employee: EmployeeService, public user: UserService) {
   }
-  notifyOpen(nr : number ){
-    this.opened=nr;
+
+  ngOnInit() {
+    this.employee.getAllNotify();
+    this.employee.getAllEmployees();
+  }
+
+  notifyOpen(nr: number) {
+    this.opened = nr;
     this.employee.getEmployeesId_zglo(nr);
   }
-  addwork(id: number,id2:number){
-    this.employee.insertWork(id,id2);
+
+  addwork(id: number, id2: number) {
+    this.employee.insertWork(id, id2);
   }
 }

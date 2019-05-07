@@ -5,7 +5,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 import {UserComponent} from './components/user/user.component';
 import {HttpClientModule} from '@angular/common/http';
-import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {Routes, RouterModule} from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -32,7 +31,7 @@ const appRoutes: Routes = [
   },
   {
     path:'notif',
-    //canActivate:[AutoguardGuard],
+    canActivate:[AutoguardGuard],
     component:NotificationComponent
   },
   {
@@ -44,11 +43,6 @@ const appRoutes: Routes = [
     path: 'new-work',
     canActivate:[AutoguardGuard],
     component:NewWorkComponent
-  },
-  {
-    path: 'Log',
-    component:LoginComponent,
-    pathMatch: 'full'
   },
   {
     path: '',
@@ -69,7 +63,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     UserComponent,
-    LoginComponent,
     NotFoundComponent,
     NavigationComponent,
     SignInComponent,

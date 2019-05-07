@@ -10,9 +10,9 @@
 <div  *ngIf="employee.getEmployee().imie!=null">
   <button mat-button [matMenuTriggerFor]="menu">Menu</button>
   <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/emp">Zgłoszenia </button>
+      <button mat-menu-item routerLink="/emp">My notifications </button>
     <div *ngIf="employee.getEmployee().nadzorca">
-        <button mat-menu-item routerLink="/new-work">Rozdziel zgłoszenia </button>
+        <button mat-menu-item routerLink="/new-work">Notifications to employee</button>
     </div>
   </mat-menu>
 </div>

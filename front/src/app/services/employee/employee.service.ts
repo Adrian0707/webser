@@ -127,14 +127,6 @@ export class EmployeeService {
     );
   }
 
-  getZglo() {
-    return this.notify;
-  }
-
-  newEmployee() {
-    this.employee = new Employee();
-  }
-
   getAllNotify() {
     this.http.get<Notify[]>('http://localhost:8080/Zgloszenia').subscribe(
       data => {
@@ -149,21 +141,21 @@ export class EmployeeService {
 
   putNotify(notif: Notify) {
 
-      this.http.put('http://localhost:8080/Zgloszenia', {
-        'id_zglosz': notif.id_zglosz,
-        'id_uzyt': notif.id_uzyt,
-        'id_kategoria': notif.id_kategoria,
-        'id_status': notif.id_status,
-        'id_priorytet': notif.id_priorytet,
-        'opis': notif.opis,
-        'obraz': notif.obraz,
-        'data_przyj': notif.data_przyj,
-        'data_max': notif.data_max,
-        'data_real': notif.data_real,
-        'nazwa': notif.nazwa
-      }).subscribe(data => {
-        console.log(data);
-      });
+    this.http.put('http://localhost:8080/Zgloszenia', {
+      'id_zglosz': notif.id_zglosz,
+      'id_uzyt': notif.id_uzyt,
+      'id_kategoria': notif.id_kategoria,
+      'id_status': notif.id_status,
+      'id_priorytet': notif.id_priorytet,
+      'opis': notif.opis,
+      'obraz': notif.obraz,
+      'data_przyj': notif.data_przyj,
+      'data_max': notif.data_max,
+      'data_real': notif.data_real,
+      'nazwa': notif.nazwa
+    }).subscribe(data => {
+      console.log(data);
+    });
 
 
   }
@@ -204,11 +196,12 @@ export class EmployeeService {
 
   putWork(work: Work) {
     this.http.put('http://localhost:8080/Zadania_prac', {
-      "id": work.id,
-      "id_zglosz": work.id_zglosz,
-      "id_prac": work.id_prac,
-      "czas": work.czas
-    }).subscribe(data => { console.log(data);
+      'id': work.id,
+      'id_zglosz': work.id_zglosz,
+      'id_prac': work.id_prac,
+      'czas': work.czas
+    }).subscribe(data => {
+      console.log(data);
     });
   }
 

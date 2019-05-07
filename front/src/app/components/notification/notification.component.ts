@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UserService} from '../../services/user/user.service';
 import {DataService} from '../../services/data.service';
-
 
 
 class Zglo {
@@ -15,7 +14,7 @@ class Zglo {
   data_przyj: Date;
   data_max: Date;
   data_real: Date;
-  nazwa:String;
+  nazwa: String;
 }
 
 @Component({
@@ -24,20 +23,24 @@ class Zglo {
   styleUrls: ['./notification.component.css']
 })
 export class NotificationComponent implements OnInit {
-zglo: Zglo;
-  constructor(private user:UserService,private  data:DataService) { }
+  zglo: Zglo;
 
-  ngOnInit() {this.zglo=new Zglo();
+  constructor(private user: UserService, private  data: DataService) {
   }
-  onClick($event,text,title){
-    this.data.getTime().subscribe(data =>{
-      this.zglo.data_przyj=new Date(data.currentDateTime);
-    this.zglo.opis=text;
-    this.zglo.nazwa=title;
-    this.zglo.id_uzyt=this.user.getUser().id_uzyt;
-    this.zglo.id_priorytet=1;
-    this.zglo.id_status=1;
-    this.user.insertZgloDB(this.zglo)
+
+  ngOnInit() {
+    this.zglo = new Zglo();
+  }
+
+  onClick($event, text, title) {
+    this.data.getTime().subscribe(data => {
+      this.zglo.data_przyj = new Date(data.currentDateTime);
+      this.zglo.opis = text;
+      this.zglo.nazwa = title;
+      this.zglo.id_uzyt = this.user.getUser().id_uzyt;
+      this.zglo.id_priorytet = 1;
+      this.zglo.id_status = 1;
+      this.user.insertZgloDB(this.zglo);
     });
   }
 

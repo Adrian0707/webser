@@ -45,6 +45,15 @@ img{
   top: 10%;
   left: 40%;
 }
+#box5{
+  border-radius: 25px;
+  background: #ffffff;
+  opacity: 0.95;
+  padding: 2em;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
 .example-viewport {
   height: 200px;
   width: 300px;

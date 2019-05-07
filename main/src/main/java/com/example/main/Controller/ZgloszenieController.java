@@ -1,6 +1,7 @@
 package com.example.main.Controller;
 
 
+import com.example.main.Entity.Pracownik;
 import com.example.main.Entity.Uzytkownik;
 import com.example.main.Entity.Zgloszenie;
 import com.example.main.Service.*;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
+import java.time.ZoneId;
 import java.util.Collection;
 
 
@@ -25,6 +28,8 @@ public class ZgloszenieController {
     private PriorytetService priorytetService;
     @Autowired
     private KaterogiaService katerogiaService;
+    @Autowired
+    private PracownikService pracownikService;
 
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Zgloszenie> getAllZgloszenie() {
@@ -54,16 +59,35 @@ public class ZgloszenieController {
         Mail mail = new Mail();
         Uzytkownik user =uzytkownikService.getUzytkownikById(zgloszenie.getId_uzyt());
         mail.sendMessage(user.getEmail(),"Zmiana Statusu" +
-                "","Witaj "+user.getImie()+" "+user.getNazwisko()+"\ntwojgo zgłoszenie: #"+zgloszenie.getId_zglosz()+" uległo zmianie\n" +
+                "","Witaj "+user.getImie()+" "+user.getNazwisko()+"\ntwojgo zgłoszenie: #"+zgloszenie.getId_zglosz()+
+                " "+zgloszenie.getNazwa()+" uległo zmianie\n" +
                 "Status:"+statusService.getStatusById(zgloszenie.getId_status()).getNazwa()+"\n"
         +"Priorytet:"+priorytetService.getPriorytetById(zgloszenie.getId_priorytet()).getNazwa()+"\n"
-        +"Kategoria:"+katerogiaService.getKategoriaById(zgloszenie.getId_status()).getNazwa()+"\n");
+        +"Kategoria:"+katerogiaService.getKategoriaById(zgloszenie.getId_status()).getNazwa()+"\n"
+        +"Wiecej informacji znajdziesz na stronie http://localhost:4200");
         zgloszenieService.upadeZgloszenieByID(zgloszenie);
 
     }
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void insertZgloszenie(@RequestBody Zgloszenie zgloszenie) {
+        zgloszenie.setData_max( new Date(Date.from(zgloszenie.getData_przyj()
+                .toLocalDate().plusDays(20).atStartOfDay(ZoneId.systemDefault()).toInstant()).getTime()));
+
+        Mail mail = new Mail();
+        Collection<Pracownik> employees =pracownikService.getAllPracownik();
+        for (Pracownik employee : employees) {
+            if(employee.getNadzorca()==true){
+                mail.sendMessage(employee.getEmail(),"Nowe zgłoszenie" +
+                        "","Odnotowano nowe zgłoszenie nr: "+zgloszenie.getId_zglosz()+"\n"
+                +"Nazwa :"+zgloszenie.getNazwa()+"\n"
+                +"Maksymalna data jego realizaji została ustanowiona na "+zgloszenie.getData_max()+"\n"
+                +"Wiecej na http://localhost:4200");
+            }
+
+        }
+
+
         zgloszenieService.insertZgloszenie(zgloszenie);
     }
 

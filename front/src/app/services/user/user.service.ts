@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
+
 class User {
   id_uzyt: Number;
   imie: string;
@@ -9,6 +10,7 @@ class User {
   login: string;
   haslo: string;
 }
+
 class Notify {
   id_zglosz: Number;
   id_uzyt: Number;
@@ -20,7 +22,7 @@ class Notify {
   data_przyj: Date;
   data_max: Date;
   data_real: Date;
-  nazwa:String;
+  nazwa: String;
 }
 
 @Injectable({
@@ -34,23 +36,13 @@ export class UserService {
   private notifies: Notify[];
   private id: number;
   private i: number;
-  constructor(private  http: HttpClient,private router: Router) {
-    this.isUserLoggedIn=false;
-    this.user= new User();
-  }
-  putUserDB(){
-    this.http.put<User>('http://localhost:8080/Uzytkownicy', {
-      id_uzyt: this.user.id_uzyt,
-      imie: this.user.imie,
-      nazwisko: this.user.nazwisko,
-      email: this.user.email,
-      login: this.user.login,
-      haslo: this.user.haslo
-    }).subscribe(data => {
-    });
 
+  constructor(private  http: HttpClient, private router: Router) {
+    this.isUserLoggedIn = false;
+    this.user = new User();
   }
-  insertZgloDB(zglo:Notify){
+
+  insertZgloDB(zglo: Notify) {
     this.http.get<number>('http://localhost:8080/Zgloszenia/count').subscribe(
       data => {
         this.id = data;
@@ -59,24 +51,25 @@ export class UserService {
           this.http.post<Notify>('http://localhost:8080/Zgloszenia', {
 
             id_zglosz: this.id,
-          id_uzyt: zglo.id_uzyt,
-          id_kategoria: zglo.id_kategoria,
-          id_status: zglo.id_status,
-          id_priorytet: zglo.id_priorytet,
-          opis: zglo.opis,
-          obraz: zglo.obraz,
-          data_przyj: zglo.data_przyj,
-          data_max: zglo.data_max,
-          data_real: zglo.data_real,
-          nazwa: zglo.nazwa
+            id_uzyt: zglo.id_uzyt,
+            id_kategoria: zglo.id_kategoria,
+            id_status: zglo.id_status,
+            id_priorytet: zglo.id_priorytet,
+            opis: zglo.opis,
+            obraz: zglo.obraz,
+            data_przyj: zglo.data_przyj,
+            data_max: zglo.data_max,
+            data_real: zglo.data_real,
+            nazwa: zglo.nazwa
           }).subscribe(data => {
-            
+
           });
         }
-      })
-      this.router.navigate(['/user']);
+      });
+    this.router.navigate(['/user']);
   }
-  insertUserDB(user){
+
+  insertUserDB(user) {
 
     this.http.get<number>('http://localhost:8080/Uzytkownicy/count').subscribe(
       data => {
@@ -91,13 +84,14 @@ export class UserService {
             login: user.login,
             haslo: user.haslo
           }).subscribe(data => {
-            
+
           });
         }
-      })
+      });
   }
-  getUserLogHasDB(login,haslo){
-    this.http.get<User>('http://localhost:8080/Uzytkownicy/'+login+"/"+haslo).subscribe(
+
+  getUserLogHasDB(login, haslo) {
+    this.http.get<User>('http://localhost:8080/Uzytkownicy/' + login + '/' + haslo).subscribe(
       data => {
         this.user = data;
 
@@ -119,93 +113,101 @@ export class UserService {
       }
     );
   }
-  getUserNotifLogDB(id:number){
-    this.http.get<User>('http://localhost:8080/Uzytkownicy/'+id).subscribe(
+
+  getUserNotifLogDB(id: number) {
+    this.http.get<User>('http://localhost:8080/Uzytkownicy/' + id).subscribe(
       data => {
-       // this.user = data;
-       this.userNotfy=data;
+        // this.user = data;
+        this.userNotfy = data;
       },
       err => {
         console.error('Error: Get User', err);
 
       }
     );
-    //this.isUserLoggedIn=true;
+  }
 
+  getUserNotifLogDBCheck(name: string) {
+    return this.http.get<User>('http://localhost:8080/Uzytkownicy/' + name + '/get');
   }
-  getUserNotifLogDBCheck(name:string){
-   return this.http.get<User>('http://localhost:8080/Uzytkownicy/'+name+"/get")
+
+  setUserLoggedIn() {
+    this.isUserLoggedIn = true;
   }
-  setUserLoggedIn(){
-    this.isUserLoggedIn=true;
-  }
-  getUserLoggedIn(){
+
+  getUserLoggedIn() {
     return this.isUserLoggedIn;
   }
-  getUser(){
+
+  getUser() {
     return this.user;
   }
-  getUserNotif(){
+
+  getUserNotif() {
     return this.userNotfy;
-}
-  getNotify(){
+  }
+
+  getNotify() {
     return this.notifies;
   }
-  newUser(){
-    this.user= new User();
-  }
-  translateId_status(notyf : Notify){
-    if(notyf.id_status==1)
-      return "przyjete";
-    else if(notyf.id_status==2)
-      return "rozpatrzone";
-    else if(notyf.id_status==3)
-      return "zakonczone";
+
+  translateId_status(notyf: Notify) {
+    if (notyf.id_status == 1)
+      return 'przyjete';
+    else if (notyf.id_status == 2)
+      return 'rozpatrzone';
+    else if (notyf.id_status == 3)
+      return 'zakonczone';
 
   }
-  translateId_priorytet(notyf : Notify){
-    if(notyf.id_priorytet==1)
-      return "niski";
-    else if(notyf.id_priorytet==2)
-      return "sredni";
-    else if(notyf.id_priorytet==3)
-      return "wysoki";
+
+  translateId_priorytet(notyf: Notify) {
+    if (notyf.id_priorytet == 1)
+      return 'niski';
+    else if (notyf.id_priorytet == 2)
+      return 'sredni';
+    else if (notyf.id_priorytet == 3)
+      return 'wysoki';
 
   }
-  translateId_kategoria(notyf : Notify){
-    if(notyf.id_kategoria==1)
-      return "pralka";
-    else if(notyf.id_kategoria==2)
-      return "zmywarka";
-    else if(notyf.id_kategoria==3)
-      return "lodówka";
+
+  translateId_kategoria(notyf: Notify) {
+    if (notyf.id_kategoria == 1)
+      return 'pralka';
+    else if (notyf.id_kategoria == 2)
+      return 'zmywarka';
+    else if (notyf.id_kategoria == 3)
+      return 'lodówka';
 
   }
-  translateId_statusL(notyf : number){
-    if(notyf==1)
-      return "przyjete";
-    else if(notyf==2)
-      return "rozpatrzone";
-    else if(notyf==3)
-      return "zakonczone";
+
+  translateId_statusL(notyf: number) {
+    if (notyf == 1)
+      return 'przyjete';
+    else if (notyf == 2)
+      return 'rozpatrzone';
+    else if (notyf == 3)
+      return 'zakonczone';
 
   }
-  translateId_priorytetL(notyf : number){
-    if(notyf==1)
-      return "niski";
-    else if(notyf==2)
-      return "sredni";
-    else if(notyf==3)
-      return "wysoki";
+
+  translateId_priorytetL(notyf: number) {
+    if (notyf == 1)
+      return 'niski';
+    else if (notyf == 2)
+      return 'sredni';
+    else if (notyf == 3)
+      return 'wysoki';
 
   }
-  translateId_kategoriaL(notyf : number){
-    if(notyf==1)
-      return "pralka";
-    else if(notyf==2)
-      return "zmywarka";
-    else if(notyf==3)
-      return "lodówka";
+
+  translateId_kategoriaL(notyf: number) {
+    if (notyf == 1)
+      return 'pralka';
+    else if (notyf == 2)
+      return 'zmywarka';
+    else if (notyf == 3)
+      return 'lodówka';
 
   }
 

@@ -1,18 +1,13 @@
-
-
 <div id="box" *ngIf="employee.getEmployee().id_prac">
   <h4>Employee: {{employee.getEmployee().imie}} {{employee.getEmployee().nazwisko}}</h4>
-    <h6>Login: {{employee.getEmployee().login}}</h6>
-    <h6>Email: {{employee.getEmployee().email}}</h6>
+  <h6>Login: {{employee.getEmployee().login}}</h6>
+  <h6>Email: {{employee.getEmployee().email}}</h6>
 </div>
-
-
 <div id="box2">
   <div>
     <button (click)="refresh($event)" type="button" class="btn btn-dark">Show details/Refresh list</button>
   </div>
   <h1></h1>
-
   <a class="list-group-item list-group-item-dark ">
     Notifications
   </a>
@@ -24,21 +19,20 @@
         {{zgl.nazwa}} {{user.translateId_kategoria(zgl)}}</button>
     </div>
   </cdk-virtual-scroll-viewport>
-
 </div>
-
 <div *ngIf="employee.employees!=null">
   <div *ngFor="let zgl of employee.notify">
-    <div id="box3"style="overflow-y: scroll ; height:570px; width: 800px;" *ngIf="this.opened==zgl.id_zglosz">
+    <div id="box3" style="overflow-y: scroll ; height:570px; width: 800px;" *ngIf="this.opened==zgl.id_zglosz">
       <button (click)='startTimer()' class="btn btn-dark">Start Timer</button>
       <button (click)='pauseTimer()' class="btn btn-dark">Pause</button>
       <button (click)="addtime()" class="btn btn-dark">Finish session</button>
-      <h6>Time in this sesion {{sec/60}} min</h6>
+      <h6>Time in this sesion {{this.sec / 60}} min</h6>
       <h6>Time you spent: {{employee.work.czas}}H</h6>
       <h6>User: {{user.getUserNotif().imie}} {{user.getUserNotif().nazwisko}} {{user.getUserNotif().email}} </h6>
       <h6>Title: {{zgl.nazwa}}</h6>
       <h6>Nr: {{zgl.id_zglosz}}</h6>
       <h6>Date: {{zgl.data_przyj}}</h6>
+      <h6>Deadline: {{zgl.data_max}}</h6>
       <h6>Category: {{user.translateId_kategoria(zgl)}}</h6>
       <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
         <button (click)="zgl.id_kategoria=1" type="button"
@@ -68,16 +62,13 @@
       </div>
       <br>
       <button (click)='changeStatus(zgl)' class="btn btn-dark">Update</button>
-
       <h6>Employees: </h6>
       <div *ngFor="let emp of employee.getEmployees()">
         <li>{{emp.imie}} {{emp.nazwisko}}
           Mail: {{emp.email}}</li>
       </div>
       Description: {{zgl.opis}}
-
       <br>
-
       <div *ngIf="zgl.id_kategoria==1">
         <img src="https://www.neonet.pl/karty/pliki/zdjecia/full600/37/pralka-samsung-agd-ww70-j5346-fx-319903f1.jpg">
       </div>
@@ -86,134 +77,53 @@
       </div>
       <div *ngIf="zgl.id_kategoria==3">
         <img src="https://www.neonet.pl/karty/pliki/zdjecia/full600/46/4242002919003F1.jpg">
-
       </div>
       <button (click)='commentsWindowSwitch()' class="btn btn-dark">Comments</button>
+      <div *ngIf="employee.getEmployee().nadzorca">
+        <button (click)='statisticsWindowSwitch()' class="btn btn-dark">Statistics</button>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-
 <div *ngIf="comentsWindow">
   <div *ngFor="let zgl of employee.notify">
-    <div id="box4"style="overflow-y: scroll ; height:570px; width: 800px;" *ngIf="this.opened==zgl.id_zglosz">
-<div>
-  <div *ngIf="employee.coments">
-    <div *ngFor="let com of employee.coments" class="box">
-      <div class="container">
-        <h6 class="text-warning"
-            *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac - 1].login}}
-          Dnia: {{com.data}}</h6>
-        <h6>{{com.comment}}</h6>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="input-group input-group-lg">
-      <textarea #text class="form-control" aria-label="With textarea"></textarea>
-    </div>
-
-    <div>
-      <button (click)="onClick($event,text.value,zgl.id_zglosz) " type="button" class="btn btn-dark">Send</button>
-      <button (click)="commRefresh(zgl.id_zglosz)" type="button" class="btn btn-dark">Refresh</button>
-      <button (click)='commentsWindowSwitch()' class="btn btn-dark">close</button>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-<!--
-
-  <div>
-    <button (click)="refresh()" type="button" class="btn btn-dark">Odświerz</button>
-  </div>
-
-
-  <div class="list-group">
-    <a class="list-group-item list-group-item-dark ">
-      Zgloszenia
-    </a>
-
-
-    <div *ngFor="let zgl of employee.notify">
-
-
-      <button (click)="notifyOpen(zgl.id_zglosz,zgl.id_uzyt)" class="list-group-item list-group-item-dark list-group-item-action active">{{zgl.id_zglosz}}# {{user.translateId_kategoria(zgl)}}</button>
-
-      <div *ngIf="this.opened==zgl.id_zglosz">
-        <div class="box2">
-        <h6 class="text-warning">Kategoria: {{user.translateId_kategoria(zgl)}}</h6>
-        <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
-          <button (click)="zgl.id_kategoria=1" type="button" class="btn btn-outline-secondary">{{this.user.translateId_kategoriaL(1)}}</button>
-          <button (click)="zgl.id_kategoria=2"type="button" class="btn btn-outline-secondary">{{this.user.translateId_kategoriaL(2)}}</button>
-          <button (click)="zgl.id_kategoria=3"type="button" class="btn btn-outline-secondary">{{this.user.translateId_kategoriaL(3)}}</button>
-        </div>
-        <h6 class="text-warning">Priorytet: {{user.translateId_priorytet(zgl)}}</h6>
-        <div *ngIf="employee.getEmployee().nadzorca" class="btn-group" role="group" aria-label="Basic example">
-          <button (click)="zgl.id_priorytet=1" type="button" class="btn btn-outline-secondary">{{this.user.translateId_priorytetL(1)}}</button>
-          <button (click)="zgl.id_priorytet=2"type="button" class="btn btn-outline-secondary">{{this.user.translateId_priorytetL(2)}}</button>
-          <button (click)="zgl.id_priorytet=3"type="button" class="btn btn-outline-secondary">{{this.user.translateId_priorytetL(3)}}</button>
-        </div>
-        <h6 class="text-warning">Status: {{user.translateId_status(zgl)}}</h6>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button (click)="zgl.id_status=1" type="button" class="btn btn-outline-secondary">{{this.user.translateId_statusL(1)}}</button>
-          <button (click)="zgl.id_status=2"type="button" class="btn btn-outline-secondary">{{this.user.translateId_statusL(2)}}</button>
-          <button (click)="zgl.id_status=3"type="button" class="btn btn-outline-secondary">{{this.user.translateId_statusL(3)}}</button>
-        </div>
-        <h6 class="text-warning">Data: {{zgl.data_przyj}}</h6>
-        <div>
-          <button (click)="changeStatus(zgl)" type="button" class="btn btn-dark">Zmień</button>
-        </div>
-        </div>
-        <h1>Pracownicy: </h1>
-        <div *ngFor="let emp of employee.getEmployees()">
-
-          <h6 class="text-warning">Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
-            Mail: {{emp.email}}</h6>
-          <div *ngIf="employee.getEmployee().nadzorca">
-            <button (click)="del(zgl.id_zglosz,emp.id_prac,zgl.id_zglosz)" type="button" class="btn btn-dark">Usuń</button>
+    <div id="box4" style="overflow-y: scroll ; height:570px; width: 800px;" *ngIf="this.opened==zgl.id_zglosz">
+      <div>
+        <div *ngIf="employee.coments">
+          <div *ngFor="let com of employee.coments" class="box">
+            <div class="container">
+              <h6 class="text-warning"
+                  *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac - 1].login}}
+                Dnia: {{com.data}}</h6>
+              <h6>{{com.comment}}</h6>
+            </div>
           </div>
         </div>
-        <div *ngIf="user.getUserNotif()!=null">
-        <h4 class="text-warning">Użytkownik: {{user.getUserNotif().imie}} {{user.getUserNotif().nazwisko}} {{user.getUserNotif().email}}</h4>
-        </div>
-          <h3>Opis: </h3>
-        <h5>{{zgl.opis}}</h5>
-        <h5 class= "text-warning">Komentarze</h5>
-        <div *ngIf="employee.coments">
-       <div *ngFor="let com of employee.coments" class="box">
-         <div class="container">
-         <h6 class= "text-warning" *ngIf="employee.employeesall[com.id_prac-1]!=null">{{employee.employeesall[com.id_prac-1].login}} Dnia: {{com.data}}</h6>
-         <h6>{{com.comment}}</h6>
-         </div>
-       </div>
-      </div>
         <div>
           <div class="input-group input-group-lg">
             <textarea #text class="form-control" aria-label="With textarea"></textarea>
           </div>
 
           <div>
-            <button (click)="onClick($event,text.value,zgl.id_zglosz) " type="button" class="btn btn-dark">Wyślij</button>
-            <button (click)="notifyOpen(zgl.id_zglosz,zgl.id_uzyt)" type="button" class="btn btn-dark">Odświerz</button>
+            <button (click)="onClick($event,text.value,zgl.id_zglosz) " type="button" class="btn btn-dark">Send</button>
+            <button (click)="commRefresh(zgl.id_zglosz)" type="button" class="btn btn-dark">Refresh</button>
+            <button (click)='commentsWindowSwitch()' class="btn btn-dark">close</button>
           </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
-
-
-
-
-</div>
-<div *ngIf="!employee.getEmployee().id_prac" class="table-dark">
-  <li>Złe dane logowania</li>
 </div>
 
-</div>
--->
+<div *ngIf="statisticsWindow">
 
+  <div id="box5" style="overflow-y: scroll ; height:570px; width: 800px;">
+    <div>
+      <img
+        src="https://www.researchgate.net/publication/318432498/figure/fig5/AS:518663561072645@1500670437349/Statistic-analysis-for-separation-and-feature-selection-of-TBI-groups-with-different-time.png">
+      <img src="https://statistics.rutgers.edu/images/Home/modules/Welcome.png">
+      <img src="https://www.yr.no/stasjon/eklima/89010/graf/aar.eng.png">
+    </div>
+    <button (click)='statisticsWindowSwitch()' class="btn btn-dark">close</button>
+  </div>
+</div>

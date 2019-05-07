@@ -2,55 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcd2e78-c32a-43da-b10e-b63bdb4e08ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../front/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/employee/employee.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/mail/mail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/login/login.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/new-work/new-work.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/not-found/not-found.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/notification/notification.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/sign-in/sign-in.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/components/user/user.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/services/employee/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/services/employee/employee.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zadanie_prac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zadanie_prac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zgloszenie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zgloszenie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracImpl$Zadanie_pracRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracImpl$Zadanie_pracRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/Zadanie_pracController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/Zadanie_pracController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Controller/ZgloszenieController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/PracownikDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/PracownikDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/Zadanie_pracImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl$ZgloszenieRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl$ZgloszenieRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Dao/ZgloszenieDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Pracownik.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Pracownik.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Zadanie_prac.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Zadanie_prac.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Zgloszenie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/Entity/Zgloszenie.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,93 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="59" column="93" selection-start-line="59" selection-start-column="93" selection-end-line="59" selection-end-column="93" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#ZgloszenieRowMapper#0;class#ZgloszenieDaoImpl#0" />
-                <element signature="method#mapRow#0;class#ZgloszenieRowMapper#0;class#ZgloszenieDaoImpl#0" />
-                <element signature="method#getZgloszenieById#0;class#ZgloszenieDaoImpl#0" />
-                <element signature="method#getZgloszeniaByIdUz#0;class#ZgloszenieDaoImpl#0" />
-                <element signature="method#upadeZgloszenieByID#0;class#ZgloszenieDaoImpl#0" />
-                <element signature="method#removeZgloszenieById#0;class#ZgloszenieDaoImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#UzytkownikRowMapper#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#getAllUzytkownik#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#getUzytkownikById#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#getUzytkownikByLogHas#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#upadeUzytkownikByID#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#removeUzytkownikById#0;class#UzytkownikDaoImpl#0" />
-                <element signature="method#insertUzytkownik#0;class#UzytkownikDaoImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zadanie_prac.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#183#184#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="223">
+              <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,8 +78,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="130">
+              <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#UpadeStudentById#0;class#Zadanie_pracController#0" />
+                <element signature="method#insertZadanie_prac#0;class#Zadanie_pracController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="805">
+              <caret line="74" column="79" selection-start-line="74" selection-start-column="79" selection-end-line="74" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,22 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/PriorytetService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="508">
+              <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,23 +181,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/KomentarzService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/KomentarzController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/UzytkownikDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/KomentarzDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/Mail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/UzytkownikController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/MainApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Pracownik.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zgloszenie.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Entity/Zadanie_prac.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java" />
       </list>
     </option>
   </component>
@@ -397,7 +299,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549044956869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549094677292" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../front" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -470,7 +372,7 @@
       <workItem from="1548707605004" duration="17217000" />
       <workItem from="1548895342409" duration="1111000" />
       <workItem from="1548980757961" duration="3553000" />
-      <workItem from="1549046497221" duration="8073000" />
+      <workItem from="1549046497221" duration="13194000" />
     </task>
     <task id="LOCAL-00001" summary="cross orgin">
       <created>1544990240937</created>
@@ -490,7 +392,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165064000" />
+    <option name="totallyTimeSpent" value="170185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,7 +407,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -517,7 +419,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.2667758" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2536825" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.34697217" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.31751227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -572,16 +474,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/KategoriaDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../jfk/Lab 1 I6B4S1 - do wysłania/Lab 1 I6B4S1 - do wysłania/lab1jfki6b4s1regexpres/lab1jfki6b4s1regexpres.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -678,16 +570,6 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bd6a6e8-f94c-4a04-b2d9-988d1c25438f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/PracownikService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -759,16 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -976,27 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#upadeUzytkownikByID#0;class#UzytkownikService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/PriorytetService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/ZgloszenieDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1013,60 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="59" column="93" selection-start-line="59" selection-start-column="93" selection-end-line="59" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="45" column="52" lean-forward="true" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1105,6 +906,108 @@
             <element signature="method#upadeUzytkownikByID#0;class#UzytkownikDaoImpl#0" />
             <element signature="method#removeUzytkownikById#0;class#UzytkownikDaoImpl#0" />
             <element signature="method#insertUzytkownik#0;class#UzytkownikDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/StatusDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/PriorytetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/ZgloszenieService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/PracownikService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/UzytkownikService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#upadeUzytkownikByID#0;class#UzytkownikService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Service/Zadanie_pracService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/Zadanie_pracImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="74" column="79" selection-start-line="74" selection-start-column="79" selection-end-line="74" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Dao/PracownikDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/Zadanie_pracController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#UpadeStudentById#0;class#Zadanie_pracController#0" />
+            <element signature="method#insertZadanie_prac#0;class#Zadanie_pracController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/main/Controller/ZgloszenieController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

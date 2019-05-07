@@ -1,0 +1,23 @@
+<div id="box" *ngIf="userService.getUser().id_uzyt==null">
+  <form (submit)="loginUser($event)" #userLogForm="ngForm">
+    <div>
+      <br>
+      <mat-form-field class="example-full-width">
+      <input matInput type="text" placeholder="Username"id="username" required  >
+    </mat-form-field>
+    </div>
+    <div>
+      <br>
+      <mat-form-field class="example-full-width">
+      <input matInput type="password" placeholder="Password"id="password"  required  >
+    </mat-form-field>
+    </div>
+    <input class="btn btn-dark" type="submit" [disabled]="!userLogForm.valid" value="login" >
+  </form>
+  <br>
+  <mat-checkbox [checked]="this.emp" (change)="this.emp = !this.emp" >I'm employee</mat-checkbox>
+  <br>
+  <a routerLink="/sign-in"> Registration</a>
+</div>
+
+

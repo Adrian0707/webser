@@ -1,28 +1,36 @@
 <div *ngIf="employee.getEmployee().nadzorca" class="list-group">
-  <a class="list-group-item list-group-item-dark ">
-    Zgloszenia
-  </a>
-
-
-  <div *ngFor="let zgl of employee.notifyall">
-
-
-    <button (click)="notifyOpen(zgl.id_zglosz)" class="list-group-item list-group-item-dark list-group-item-action active">
-      Id: {{zgl.id_zglosz}}#
-      Kategoria: {{user.translateId_kategoria(zgl)}}
-      Data: {{zgl.data_przyj}} Priorytet: {{user.translateId_priorytet(zgl)}}
-      Status: {{user.translateId_status(zgl)}}</button>
-    <div *ngIf="this.opened==zgl.id_zglosz">
-      <h1>Pracownicy: </h1>
-      <div *ngFor="let emp of employee.getEmployees()">
-        <li>Imie: {{emp.imie}}  Nazwisko: {{emp.nazwisko}}
-          Mail: {{emp.email}}</li>
-
+  <div id="box">
+    <a class="list-group-item list-group-item-dark ">
+      Notifications
+    </a>
+    <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+      <div *cdkVirtualFor="let zgl of employee.notifyall" class="example-item">
+        <button (click)="notifyOpen(zgl.id_zglosz,zgl.id_uzyt)"
+                class="list-group-item list-group-item-dark list-group-item-action active">
+          id: {{zgl.id_zglosz}}#
+          Kategoria: {{user.translateId_kategoria(zgl)}}
+          Data: {{zgl.data_przyj}} Priorytet: {{user.translateId_priorytet(zgl)}}
+          Status: {{user.translateId_status(zgl)}}</button>
       </div>
-      <div *ngFor="let emp of employee.employeesall">
-        <button (click)="addwork(zgl.id_zglosz,emp.id_prac)" type="button" class="btn btn-secondary">{{emp.imie}} {{emp.nazwisko}}</button>
+    </cdk-virtual-scroll-viewport>
+  </div>
+  <div id="box2" style="overflow-y: scroll ; height:500px; width: 500px;">
+    <div *ngFor="let zgl of employee.notifyall">
+      <div *ngIf="this.opened==zgl.id_zglosz">
+        <h3>Id: {{zgl.id_zglosz}}</h3>
+        <h4>Actual employee: </h4>
+        <div *ngFor="let emp of employee.getEmployees()">
+          <a>{{emp.imie}} {{emp.nazwisko}}</a>
+          <br>
+          <button class="btn btn-dark" (click)="employee.delWork(zgl.id_zglosz,emp.id_prac)">Delete</button>
+        </div>
+        <h4>Add new: </h4>
+        <div *ngFor="let emp of employee.employeesall">
+          <a>{{emp.imie}} {{emp.nazwisko}}</a>
+          <br>
+          <button (click)="addwork(zgl.id_zglosz,emp.id_prac)" type="button" class="btn btn-secondary">Add</button>
+        </div>
       </div>
-
     </div>
   </div>
 </div>

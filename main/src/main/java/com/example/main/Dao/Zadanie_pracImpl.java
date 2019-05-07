@@ -72,7 +72,7 @@ public class Zadanie_pracImpl implements Zadanie_pracDao {
     @Override
     public void insertZadanie_prac(Zadanie_prac zadanie_prac) {
         //insert into table columns (...) values (...)
-        final String sql = "insert into zadania_prac (id,id_prac,id_zglosz) Values (?,?,?,?)";
+        final String sql = "insert into zadania_prac (id,id_prac,id_zglosz,czas) Values (?,?,?,?)";
         final int id = zadanie_prac.getId();
         final int id_prac = zadanie_prac.getId_prac();
         final int id_zglosz = zadanie_prac.getId_zglosz();

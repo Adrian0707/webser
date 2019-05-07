@@ -2,22 +2,23 @@
   <h5>New notification</h5>
   <h6>Category</h6>
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button (click)="this.zglo.id_kategoria=1" type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(1)}}</button>
-    <button (click)="this.zglo.id_kategoria=2" type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(2)}}</button>
-    <button (click)="this.zglo.id_kategoria=3" type="button" class="btn btn-secondary">{{user.translateId_kategoriaL(3)}}</button>
+    <button (click)="this.zglo.id_kategoria=1" type="button"
+            class="btn btn-secondary">{{user.translateId_kategoriaL(1)}}</button>
+    <button (click)="this.zglo.id_kategoria=2" type="button"
+            class="btn btn-secondary">{{user.translateId_kategoriaL(2)}}</button>
+    <button (click)="this.zglo.id_kategoria=3" type="button"
+            class="btn btn-secondary">{{user.translateId_kategoriaL(3)}}</button>
   </div>
   <div>
     <br>
-    <textarea #title class="form-control" aria-label="With textarea"rows="1">Title</textarea>
+    <textarea #title class="form-control" aria-label="With textarea" rows="1">Title</textarea>
     <br>
     <div class="input-group input-group-lg">
-      <div >
+      <div>
       </div>
-      <textarea #text class="form-control" aria-label="With textarea"rows="6" cols="60">Description</textarea>
+      <textarea #text class="form-control" aria-label="With textarea" rows="6" cols="60">Description</textarea>
     </div>
     <br>
-      <button (click)="onClick($event,text.value,title.value)" type="button" class="btn btn-dark">Wyślij</button>
-    
-
+    <button (click)="onClick($event,text.value,title.value)" type="button" class="btn btn-dark">Wyślij</button>
   </div>
 </div>
